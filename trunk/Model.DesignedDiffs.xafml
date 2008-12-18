@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application Title="AIR-ERP" Logo="ExpressAppLogo" Subtitle="Accounting System" Company="AIR-ERP Accounting System" Copyright="Blaire Duarte 2008">
+	<BOModel>
+		<Class Name="AIR_ERP.Module.Company" ImageName="House" DefaultListViewImage="House" />
+		<Class Name="AIR_ERP.Module.Employee" ImageName="User Card" DefaultListViewImage="User Card" />
+		<Class Name="AIR_ERP.Module.Currency" ImageName="BO_Sale" DefaultListViewImage="BO_Sale" />
+		<Class Name="AIR_ERP.Module.Branch" ImageName="Catalog" DefaultListViewImage="Catalog" />
+		<Class Name="DevExpress.Persistent.BaseImpl.Country" ImageName="Home_01" DefaultListViewImage="Home_01" />
+		<Class Name="AIR_ERP.Module.SOHeader" Caption="Sales Order" ImageName="Shopping" DefaultListViewImage="Shopping" />
+		<Class Name="AIR_ERP.Module.VatCategory" ImageName="light" DefaultListViewImage="light" />
+		<Class Name="AIR_ERP.Module.Term" ImageName="Calendar" DefaultListViewImage="Calendar" />
+		<Class Name="AIR_ERP.Module.BusinessPartner" ImageName="Business_People_01" DefaultListViewImage="Business_People_01" />
+		<Class Name="AIR_ERP.Module.BusinessPartnerType" ImageName="Users_Group" DefaultListViewImage="Users_Group" />
+		<Class Name="AIR_ERP.Module.ItemMaster" DefaultListViewImage="Card" ImageName="Card" />
+		<Class Name="AIR_ERP.Module.UnitOfMeasure" ImageName="Folder_share" />
+		<Class Name="AIR_ERP.Module.Warehouse" DefaultListViewImage="Home" ImageName="Home" />
+		<Class Name="AIR_ERP.Module.ProductGroup" ImageName="Department" DefaultListViewImage="Department" />
+		<Class Name="AIR_ERP.Module.ItemType" ImageName="Options" DefaultListViewImage="Options" />
+		<Class Name="AIR_ERP.Module.ChartOfAccounts" DefaultListViewImage="Chart_02" ImageName="Chart_02" />
+		<Class Name="AIR_ERP.Module.AccountType" DefaultListViewImage="Usercard_01" ImageName="Usercard_01" DefaultDetailViewImage="Usercard_01" />
+		<Class Name="AIR_ERP.Module.Bank" ImageName="Bank" DefaultListViewImage="Bank" />
+		<Class Name="AIR_ERP.Module.BankAccount" DefaultListViewImage="Briefcase" ImageName="Briefcase" />
+	</BOModel>
+	<Views>
+		<DetailView ID="MyLogonParameters_DetailView" Caption="Please Login">
+			<Layout Width="427" Height="586">
+				<LayoutGroup ID="Main" CaptionLocation="Default" RelativeSize="97">
+					<LayoutGroup ID="SimpleEditors" CaptionLocation="Default" RelativeSize="100">
+						<LayoutGroup ID="MyLogonParameters" CaptionLocation="Default" RelativeSize="100">
+							<LayoutItem ID="Password" Index="2" RelativeSize="91" SizeConstraintsType="Default" />
+							<LayoutItem ID="Employee" RelativeSize="4" SizeConstraintsType="Default" />
+							<LayoutItem ID="Company" Index="0" RelativeSize="4" SizeConstraintsType="Default" />
+						</LayoutGroup>
+					</LayoutGroup>
+				</LayoutGroup>
+			</Layout>
+		</DetailView>
+		<ListView ID="SOHeader_ListView">
+			<Columns>
+				<ColumnInfo PropertyName="Currency" Index="-1" />
+				<ColumnInfo PropertyName="Company" Index="-1" />
+				<ColumnInfo PropertyName="Branch" Index="6" />
+				<ColumnInfo PropertyName="VatCategory" Index="-1" />
+				<ColumnInfo PropertyName="BusinessPartner" Index="2" />
+				<ColumnInfo PropertyName="DocNum" Index="1" />
+				<ColumnInfo PropertyName="DocDate" Index="0" />
+				<ColumnInfo PropertyName="Remarks" Index="5" />
+				<ColumnInfo PropertyName="IsActive" Index="3" />
+			</Columns>
+		</ListView>
+		<DetailView ID="SOHeader_DetailView">
+			<Items>
+				<PropertyEditor PropertyName="BusinessPartner" ImmediatePostData="True" />
+			</Items>
+			<Layout Width="472" Height="586">
+				<LayoutGroup ID="Main" CaptionLocation="Default" RelativeSize="97">
+					<LayoutGroup ID="SimpleEditors" CaptionLocation="Default" RelativeSize="31">
+						<LayoutGroup ID="SOHeader" Caption="Sales Order Header" CaptionLocation="Default" RelativeSize="93">
+							<LayoutGroup ID="SOHeader_col1" CaptionLocation="Default" RelativeSize="49">
+								<LayoutItem ID="Currency" Removed="True" />
+								<LayoutItem ID="Term" Removed="True" />
+								<LayoutItem ID="VatCategory" Removed="True" />
+								<LayoutItem ID="Branch" Index="1" RelativeSize="20" SizeConstraintsType="Default" />
+								<LayoutItem ID="Company" Index="0" RelativeSize="20" SizeConstraintsType="Default" />
+								<LayoutItem ID="DocNum" ShowCaption="True" CaptionLocation="Default" Index="2" RelativeSize="20" SizeConstraintsType="Default" IsNewNode="True" />
+								<LayoutItem ID="DocDate" ShowCaption="True" CaptionLocation="Default" Index="3" RelativeSize="20" SizeConstraintsType="Default" IsNewNode="True" />
+								<LayoutItem ID="BusinessPartner" ShowCaption="True" CaptionLocation="Default" Index="4" RelativeSize="20" SizeConstraintsType="Default" IsNewNode="True" />
+							</LayoutGroup>
+							<LayoutGroup ID="SOHeader_col2" CaptionLocation="Default" RelativeSize="49">
+								<LayoutItem ID="DocNum" Removed="True" />
+								<LayoutItem ID="DocDate" Removed="True" />
+								<LayoutItem ID="BusinessPartner" Removed="True" />
+								<LayoutItem ID="Remarks" Index="4" RelativeSize="20" SizeConstraintsType="Default" />
+								<LayoutItem ID="IsActive" Index="2" RelativeSize="20" SizeConstraintsType="Default" />
+								<LayoutItem ID="Currency" ShowCaption="True" CaptionLocation="Default" Index="3" RelativeSize="20" SizeConstraintsType="Default" IsNewNode="True" />
+								<LayoutItem ID="Term" ShowCaption="True" CaptionLocation="Default" Index="0" RelativeSize="20" SizeConstraintsType="Default" IsNewNode="True" />
+								<LayoutItem ID="VatCategory" ShowCaption="True" CaptionLocation="Default" Index="1" RelativeSize="20" SizeConstraintsType="Default" IsNewNode="True" />
+							</LayoutGroup>
+						</LayoutGroup>
+					</LayoutGroup>
+					<TabbedGroup ID="Tabs" CaptionLocation="Default" RelativeSize="68">
+						<LayoutGroup ID="SOItem" Caption="Item Detail" Direction="Vertical" RelativeSize="100">
+							<LayoutItem ID="SOItem" RelativeSize="100" SizeConstraintsType="Custom" />
+						</LayoutGroup>
+						<LayoutGroup ID="SOOthers" Caption="Other Charges" Direction="Vertical" RelativeSize="100">
+							<LayoutItem ID="SOOthers" RelativeSize="100" SizeConstraintsType="Custom" />
+						</LayoutGroup>
+						<LayoutGroup ID="AuditTrail" Direction="Vertical" RelativeSize="100">
+							<LayoutItem ID="AuditTrail" RelativeSize="100" SizeConstraintsType="Custom" />
+						</LayoutGroup>
+					</TabbedGroup>
+				</LayoutGroup>
+			</Layout>
+		</DetailView>
+		<ListView ID="SOHeader_LookupListView">
+			<Columns>
+				<ColumnInfo PropertyName="Currency" Index="-1" />
+				<ColumnInfo PropertyName="Company" Index="-1" />
+				<ColumnInfo PropertyName="Branch" Index="-1" />
+				<ColumnInfo PropertyName="VatCategory" Index="-1" />
+				<ColumnInfo PropertyName="Term" Index="-1" />
+				<ColumnInfo PropertyName="BusinessPartner" Index="2" />
+				<ColumnInfo PropertyName="DocNum" Index="0" />
+				<ColumnInfo PropertyName="DocDate" Index="1" />
+				<ColumnInfo PropertyName="Remarks" Index="-1" />
+				<ColumnInfo PropertyName="IsActive" Index="-1" />
+			</Columns>
+		</ListView>
+		<ListView ID="BusinessPartner_ListView">
+			<Columns>
+				<ColumnInfo PropertyName="Term" DataSourceCriteria="" />
+				<ColumnInfo PropertyName="BusinessPartnerType" DataSourceCriteria="" />
+			</Columns>
+		</ListView>
+		<ListView ID="SOHeader_SOItem_ListView">
+			<Columns>
+				<ColumnInfo PropertyName="Cost" Index="-1" />
+				<ColumnInfo PropertyName="Quantity" Index="3" />
+				<ColumnInfo PropertyName="DiscountRate" Index="5" />
+			</Columns>
+		</ListView>
+	</Views>
+	<NavigationItems>
+		<Group ID="Default" Caption="Master Files">
+			<Item ID="SOHeader_ListView" Removed="True" />
+			<Item ID="SOItems_ListView" Removed="True" />
+			<Item ID="SOOther_ListView" Removed="True" />
+			<Item ID="Company_ListView" Index="7" />
+			<Item ID="Employee_ListView" Index="9" />
+			<Item ID="Currency_ListView" Index="8" />
+			<Item ID="Branch_ListView" Visible="True" Index="3" />
+			<Item ID="VatCategory_ListView" Index="15" />
+			<Item ID="Term_ListView" Index="14" />
+			<Item ID="BusinessPartner_ListView" Index="4" />
+			<Item ID="BusinessPartnerType_ListView" Index="5" />
+			<Item ID="ItemMaster_ListView" Index="11" />
+			<Item ID="UnitOfMeasure_ListView" Index="16" />
+			<Item ID="Warehouse_ListView" Index="17" />
+			<Item ID="ProductGroup_ListView" Index="13" />
+			<Item ID="ItemType_ListView" Index="12" />
+			<Item ID="ItemConversion_ListView" Visible="False" Index="10" />
+			<Item ID="ChartOfAccounts_ListView" Index="6" />
+			<Item ID="AccountType_ListView" Index="0" />
+			<Item ID="Bank_ListView" Index="1" />
+			<Item ID="BankAccount_ListView" Index="2" />
+		</Group>
+		<Group ID="AR" Caption="Accounts Receivable" Index="0" IsNewNode="True">
+			<Item ID="SOHeader_ListView" ViewID="SOHeader_ListView" IsNewNode="True" />
+			<Item ID="SOItems_ListView" ViewID="SOItems_ListView" Visible="False" IsNewNode="True" />
+			<Item ID="SOOther_ListView" ViewID="SOOther_ListView" Visible="False" IsNewNode="True" />
+		</Group>
+	</NavigationItems>
+	<SchemaModules IsNewNode="True">
+		<SchemaModule Name="SystemModule" Version="8.3.2.5087" IsNewNode="True" />
+		<SchemaModule Name="DevExpress.ExpressApp.SystemModule.HideActionsViewController" Version="8.3.2.5087" IsNewNode="True" />
+		<SchemaModule Name="DevExpress.ExpressApp.SystemModule.ShowNavigationItemController" Version="8.3.2.5087" IsNewNode="True" />
+	</SchemaModules>
+</Application>
