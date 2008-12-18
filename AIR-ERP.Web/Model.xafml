@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application>
+	<Views>
+		<ListView ID="Warehouse_ListView" Criteria="Company = '@CurrentCompanyOid'" />
+	</Views>
+	<Options ListViewAllowSort="True" />
+	<SchemaModules>
+		<SchemaModule Name="SystemAspNetModule" Version="8.3.2.5087" IsNewNode="True" />
+		<SchemaModule Name="ValidationModule" Version="8.3.2.5087" IsNewNode="True" />
+	</SchemaModules>
+</Application>
