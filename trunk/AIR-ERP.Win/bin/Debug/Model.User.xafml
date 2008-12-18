@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application>
+	<Skins Current="Xmas 2008 Blue" />
+	<SchemaModules>
+		<SchemaModule Name="SystemWindowsFormsModule" Version="8.3.2.5087" IsNewNode="True" />
+		<SchemaModule Name="ValidationModule" Version="8.3.2.5087" IsNewNode="True" />
+	</SchemaModules>
+	<Templates>
+		<Template ID="DevExpress.ExpressApp.Win.Templates.MainForm" NavigationWidth="146" NavigationDock="Left" NavigationVisibility="Visible" IsNewNode="True">
+			<FormState ID="Default" State="Maximized" MaximizedOnScreen="\\.\DISPLAY1" X="88" Y="116" Width="798" Height="598" IsNewNode="True" />
+			<NavBarCustomization Width="140" IsNewNode="True">
+				<Group ID="Accounts Receivable" IsNewNode="True" />
+				<Group ID="Master Files" IsNewNode="True" />
+			</NavBarCustomization>
+			<XtraBarsCustomization ID="Default" IsNewNode="True" />
+		</Template>
+		<Template ID="DevExpress.ExpressApp.Win.Templates.NestedFrameTemplate" IsNewNode="True">
+			<XtraBarsCustomization ID="Term_AuditTrail_ListView_BarsCustomization" IsNewNode="True" />
+			<XtraBarsCustomization ID="UnitOfMeasure_AuditTrail_ListView_BarsCustomization" IsNewNode="True" />
+		</Template>
+		<Template ID="DevExpress.ExpressApp.Win.Templates.DetailViewForm" IsNewNode="True">
+			<FormState ID="Term_DetailView" State="Normal" X="272" Y="102" Width="798" Height="598" IsNewNode="True" />
+			<NavBarCustomization IsNewNode="True" />
+			<XtraBarsCustomization ID="Default" IsNewNode="True" />
+			<FormState ID="UnitOfMeasure_DetailView" State="Normal" X="185" Y="140" Width="798" Height="598" IsNewNode="True" />
+		</Template>
+	</Templates>
+</Application>
