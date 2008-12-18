@@ -1,0 +1,219 @@
+07.12.08 11:00:29.796	no context	================================================================================
+The error occured
+	Type:       Exception
+	Message:    An error with number 1026 has occurred.
+Error message: An error has occurred while loading the model. Source: 'C:\BLAIRE\AIR-ERP\AIR-ERP.Module\Model.DesignedDiffs.xafml'
+	Data:       0 entries
+	Stack trace:
+   at DevExpress.ExpressApp.DictionaryXmlReader.ReadFromFile(String fileName, Encoding encoding)
+   at DevExpress.ExpressApp.Core.XmlFileDictionaryDifferenceStore.ReadFromFile(String fileName, String aspect)
+   at DevExpress.ExpressApp.Core.XmlFileDictionaryDifferenceStore.LoadDifferenceCore(Schema schema)
+   at DevExpress.ExpressApp.DictionaryDifferenceStore.LoadDifference(Schema schema)
+   at DevExpress.ExpressApp.Dictionary.LoadLastDiffs(DictionaryDifferenceStore diffsStore)
+   at DevExpress.ExpressApp.ApplicationModulesManager.LoadModel(ITypesInfo typesInfo)
+   at DevExpress.ExpressApp.ApplicationModulesManager.Load(ITypesInfo typesInfo)
+   at DevExpress.ExpressApp.ApplicationModulesManager.Load()
+   at DevExpress.ExpressApp.Design.ModelEditor.ModelLoader.LoadModel(ITypeDiscoveryService typeDiscoveryService, ITypeResolutionService typeResolutionService)
+   at DevExpress.ExpressApp.Design.ModelEditor.EditorPane.PrivateInit(String fileName, ModelLoader modelLoader)
+InnerException:
+	Type:       XmlException
+	Message:    There are multiple root elements. Line 32, position 2.
+	Data:       0 entries
+	Stack trace:
+   at System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   at System.Xml.XmlTextReaderImpl.Throw(String res, String arg)
+   at System.Xml.XmlTextReaderImpl.Throw(Int32 pos, String res)
+   at System.Xml.XmlTextReaderImpl.ParseDocumentContent()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlTextReader.Read()
+   at DevExpress.ExpressApp.DictionaryXmlReader.DictionaryXmlTextReader.ReadDictionary()
+   at DevExpress.ExpressApp.DictionaryXmlReader.ReadFromFile(String fileName, Encoding encoding)
+	InnerException is null
+
+--------------------------------------------------------------------------------
+Loaded assemblies
+	Accessibility, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	AIR-ERP.Module, Version=1.0.3263.19251, Culture=neutral, PublicKeyToken=null, Location=
+	AIR-ERP.Module.Web, Version=1.0.3263.19252, Culture=neutral, PublicKeyToken=null, Location=
+	alu7lbfp, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null, Location=
+	COM2InteropEmit, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=InMemory Module
+	CustomMarshalers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	DevExpress.BonusSkins.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, Location=
+	DevExpress.CodeRush.Common, Version=3.2.2.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, Location=
+	DevExpress.CodeRush.Core, Version=3.2.2.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, Location=
+	DevExpress.CodeRush.Core.resources, Version=3.2.2.0, Culture=en, PublicKeyToken=35c9f04b7764aa3d, Location=
+	DevExpress.CodeRush.Extensions, Version=3.2.2.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, Location=
+	DevExpress.CodeRush.Interop, Version=3.2.2.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, Location=
+	DevExpress.CodeRush.PlugInCore, Version=3.2.2.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, Location=
+	DevExpress.CodeRush.Shell, Version=3.2.2.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, Location=
+	DevExpress.CodeRush.StructuralParser, Version=3.2.2.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, Location=
+	DevExpress.CodeRush.VSCore, Version=3.2.2.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, Location=
+	DevExpress.CodeRush.VSCore90, Version=3.2.2.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, Location=
+	DevExpress.Data.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.DXCore.AssemblyResolver, Version=3.2.2.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, Location=
+	DevExpress.DXCore.Controls.Data.v6.3, Version=8.2.0.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, Location=
+	DevExpress.DXCore.Controls.Utils.v6.3, Version=8.2.0.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, Location=
+	DevExpress.DXCore.Controls.XtraBars.v6.3, Version=8.2.0.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, Location=
+	DevExpress.DXCore.Controls.XtraEditors.v6.3, Version=8.2.0.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, Location=
+	DevExpress.DXCore.Loader, Version=3.2.2.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, Location=
+	DevExpress.DXCore.MetaData, Version=3.2.2.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, Location=
+	DevExpress.DXCore.Shell, Version=3.2.2.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, Location=
+	DevExpress.ExpressApp.Design.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Design.CRActions, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Design.CRCommandCenter, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Design.CRContexts, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Design.CRExtensions, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Design.ModelEditor.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Design.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Images.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Objects.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Security.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.TemplateWizard.v8.3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Validation.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Validation.Win.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Web.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Win.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Persistent.Base.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Persistent.BaseImpl.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Utils.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.ASPxEditors.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.ASPxGridView.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Xpo.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.XtraBars.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.XtraCharts.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.XtraEditors.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.XtraGrid.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.XtraLayout.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.XtraNavBar.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.XtraPrinting.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.XtraRichEdit.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.XtraTreeList.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.XtraVerticalGrid.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DX_About, Version=3.2.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	DX_AspExtensions, Version=3.2.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	DX_CodeStyle, Version=3.2.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	DX_ContextResolver, Version=3.2.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	DX_CoreProviders, Version=3.2.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	DX_CPPLanguage, Version=3.2.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	DX_CSharpLanguage, Version=3.2.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	DX_EvalWelcome, Version=3.2.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	DX_IncParseEngine, Version=3.2.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	DX_IntellassistEngine, Version=3.2.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	DX_JavaScriptLanguage, Version=3.2.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	DX_LinkedIdentifierEngine, Version=3.2.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	DX_MarkerEngine, Version=3.2.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	DX_PlugInManager, Version=3.2.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	DX_RegExEngine, Version=3.2.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	DX_ShortcutEngine, Version=3.2.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	DX_SmartPasteEngine, Version=3.2.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	DX_SmartTagEngine, Version=3.2.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	DX_TextFieldEngine, Version=3.2.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	DX_VBLanguage, Version=3.2.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	DX_XmlLanguage, Version=3.2.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	EnvDTE, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	EnvDTE80, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Extensibility, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.Build.Conversion.v3.5, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.Build.Engine, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.Build.Framework, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.Build.Tasks.v3.5, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.Build.Utilities, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.Build.Utilities.v3.5, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.Data.ConnectionUI, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.Data.ConnectionUI.Dialog, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.Data.Entity.Design.Package, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.Internal.VisualStudio.Shell.Interop.9.0, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.MSXML, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualBasic, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.CommandBars, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.CommonIDE, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.Data, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.Data.Compatibility, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.Data.Core, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.Data.Framework, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.Data.Host, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.Data.Interop, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.Data.Package, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.Data.Providers.Common, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.Data.Providers.SqlEverywhere, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.Data.Providers.SqlServer, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.Data.Services, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.DataTools, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.DataTools.Interop, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.Debugger.Interop, Version=8.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.Debugger.InteropA, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.Design, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.Designer.Interfaces, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.Editors, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.ManagedInterfaces, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.ManagedInterfaces.WCF, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.OLE.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.Package.LanguageService.9.0, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.Publish, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.Shell, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.Shell.9.0, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.Shell.Design, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.Shell.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.Shell.Interop.8.0, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.Shell.Interop.9.0, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.Silverlight, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.TemplateWizard, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.TemplateWizardInterface, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.TextManager.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.TextManager.Interop.8.0, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.VCProjectEngine, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.VSHelp, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.VSHelp80, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.WCFReference.Interop, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.Web, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.Web.Application, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.Windows.Forms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.WizardFramework, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.Xaml, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.Xaml.LanguageService, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.XmlEditor, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.XsdDesigner, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.XsdDesignerPackage, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VSDesigner, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.Web.Design.Client, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.Windows.Design.Host, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.Windows.Design.Markup, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.XmlEditor, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	PresentationBuildTasks, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Location=
+	PresentationCore, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Location=
+	PresentationFramework, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Location=
+	PresentationFramework.Luna, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Location=
+	stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.Configuration, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Drawing.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Runtime.Serialization.Formatters.Soap, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Security, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Web.RegularExpressions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.Xml.Linq, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	VSLangProj, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	VSLangProj2, Version=7.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	VSLangProj80, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	VsWebSite.Interop, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	WindowsBase, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Location=
+	WindowsFormsIntegration, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Location=
+	XafDomain, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=InMemory Module
+	XafDomain, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=InMemory Module
+	XafDomain, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=InMemory Module
+	XafDomain, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=InMemory Module
+	XafDomain, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=InMemory Module
+	XafDomain, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=InMemory Module
+================================================================================
+
