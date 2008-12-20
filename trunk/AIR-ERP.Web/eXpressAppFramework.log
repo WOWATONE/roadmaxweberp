@@ -16181,3 +16181,947 @@ AssemblyResourceImageSource, DevExpress.ExpressApp.Images.v8.3, Images
 15.12.08 14:24:15.531	inzqrf2re0e0csfpfuty2p2n	====================
 15.12.08 14:24:15.640	inzqrf2re0e0csfpfuty2p2n	Application is disposed
 15.12.08 14:24:15.640	inzqrf2re0e0csfpfuty2p2n	========================
+18.12.08 12:40:15.031	no context	================================================================================
+18.12.08 12:40:15.062	no context	Trace Log for fdd648db-1-128740487727500000 is started
+18.12.08 12:40:15.062	no context	================================================================================
+18.12.08 12:40:15.218	no context	System Environment
+	OS Version: Microsoft Windows NT 5.1.2600 Service Pack 3
+	.Net Framework Versions: v1.1.4322, v2.0.50727
+
+	CLR Version: 2.0.50727.3053
+	eXpressApp Version: 8.3.2.5087
+Application config
+	FullNameFormat=LastName FirstName MiddleName
+	Modules=
+	ErrorReportEmail=
+	ErrorReportEmailServer=
+	SimpleErrorReportPage=
+	RichErrorReportPage=Error.aspx
+	EnableDiagnosticActions=False
+18.12.08 12:40:17.281	no context	================================================================================
+The error occured
+	Type:       InvalidOperationException
+	Message:    Cannot send message
+	Data:       0 entries
+	Stack trace:
+   at DevExpress.ExpressApp.Web.ErrorHandling.SendAlertToAdmin(String errorId, String errorDetails, String errorText, Exception exception)
+	InnerException is null
+
+--------------------------------------------------------------------------------
+Loaded assemblies
+	A_3cd7586c_94e7_464b_bef5_dba29e0a21c0, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=InMemory Module
+	AIR-ERP.Module, Version=1.0.3274.22741, Culture=neutral, PublicKeyToken=null, Location=
+	AIR-ERP.Module.Web, Version=1.0.3274.22757, Culture=neutral, PublicKeyToken=null, Location=
+	AIR-ERP.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null, Location=
+	App_global.asax.b9gmf_gy, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=
+	App_Web_1t7eyhh_, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=
+	CppCodeProvider, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	DevExpress.Data.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Images.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Objects.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Scheduler.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Scheduler.Web.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Security.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Validation.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Web.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Persistent.Base.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Persistent.BaseImpl.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.ASPxEditors.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.ASPxGridView.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.ASPxHtmlEditor.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.ASPxPivotGrid.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.ASPxScheduler.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.ASPxSpellChecker.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.ASPxTreeList.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Xpo.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.XtraPivotGrid.v8.3.Core, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.XtraReports.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.XtraReports.v8.3.Web, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.XtraScheduler.v8.3.Core, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	Microsoft.JScript, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.Vsa, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	SMDiagnostics, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.Configuration, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Drawing.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.EnterpriseServices, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.IdentityModel, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.Runtime.Remoting, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.Runtime.Serialization, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.Runtime.Serialization.Formatters.Soap, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.ServiceModel, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.ServiceModel.Web, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Location=
+	System.ServiceProcess, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Transactions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Web.Mobile, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Web.RegularExpressions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.WorkflowServices, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Location=
+	System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	VJSharpCodeProvider, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	WebDev.WebHost, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	XafDomain, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=InMemory Module
+	XafDomain, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=InMemory Module
+================================================================================
+
+18.12.08 12:40:17.281	no context	Error ID: 855367fe-b284-42e0-8609-516368c0ffb3
+Date: 12/18/2008 12:40:15 PM
+Request details:
+  Url: http://localhost:2064/Login.aspx?ReturnUrl=/default.aspx
+  Url referrer: 
+  SessionID: Session is null
+  Request type: GET
+  User agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.5) Gecko/2008120122 Firefox/3.0.5 (.NET CLR 3.5.30729)
+  User IP: 127.0.0.1
+  User: 
+================================================================================
+The error occured
+	Type:       ConfigurationErrorsException
+	Message:    Theme 'XafDefault2' cannot be found in the application or global theme directories. (C:\Erialb\MyProject\DotNetERP\AIR-ERP.Web\web.config line 43)
+	Data:       0 entries
+	Stack trace:
+   at System.Web.Configuration.PagesSection.get_ThemeInternal()
+   at System.Web.UI.PageParser.ProcessConfigSettings()
+   at System.Web.UI.TemplateParser.PrepareParse()
+   at System.Web.UI.TemplateParser.Parse()
+   at System.Web.UI.TemplateParser.Parse(ICollection referencedAssemblies, VirtualPath virtualPath)
+   at System.Web.Compilation.BaseTemplateBuildProvider.get_CodeCompilerType()
+   at System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   at System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   at System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   at System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+	InnerException is null
+
+--------------------------------------------------------------------------------
+Loaded assemblies
+	A_3cd7586c_94e7_464b_bef5_dba29e0a21c0, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=InMemory Module
+	AIR-ERP.Module, Version=1.0.3274.22741, Culture=neutral, PublicKeyToken=null, Location=
+	AIR-ERP.Module.Web, Version=1.0.3274.22757, Culture=neutral, PublicKeyToken=null, Location=
+	AIR-ERP.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null, Location=
+	App_global.asax.b9gmf_gy, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=
+	App_Web_1t7eyhh_, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=
+	CppCodeProvider, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	DevExpress.Data.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Images.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Objects.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Scheduler.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Scheduler.Web.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Security.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Validation.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Web.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Persistent.Base.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Persistent.BaseImpl.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.ASPxEditors.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.ASPxGridView.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.ASPxHtmlEditor.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.ASPxPivotGrid.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.ASPxScheduler.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.ASPxSpellChecker.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.ASPxTreeList.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Xpo.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.XtraPivotGrid.v8.3.Core, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.XtraReports.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.XtraReports.v8.3.Web, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.XtraScheduler.v8.3.Core, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	Microsoft.JScript, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.Vsa, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	SMDiagnostics, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.Configuration, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Drawing.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.EnterpriseServices, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.IdentityModel, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.Runtime.Remoting, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.Runtime.Serialization, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.Runtime.Serialization.Formatters.Soap, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.ServiceModel, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.ServiceModel.Web, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Location=
+	System.ServiceProcess, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Transactions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Web.Mobile, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Web.RegularExpressions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.WorkflowServices, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Location=
+	System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	VJSharpCodeProvider, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	WebDev.WebHost, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+================================================================================
+
+18.12.08 12:40:17.578	no context	================================================================================
+The error occured
+	Type:       InvalidOperationException
+	Message:    Cannot send message
+	Data:       0 entries
+	Stack trace:
+   at DevExpress.ExpressApp.Web.ErrorHandling.SendAlertToAdmin(String errorId, String errorDetails, String errorText, Exception exception)
+	InnerException is null
+
+--------------------------------------------------------------------------------
+Loaded assemblies
+	A_3cd7586c_94e7_464b_bef5_dba29e0a21c0, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=InMemory Module
+	AIR-ERP.Module, Version=1.0.3274.22741, Culture=neutral, PublicKeyToken=null, Location=
+	AIR-ERP.Module.Web, Version=1.0.3274.22757, Culture=neutral, PublicKeyToken=null, Location=
+	AIR-ERP.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null, Location=
+	App_global.asax.b9gmf_gy, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=
+	App_Web_1t7eyhh_, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=
+	CppCodeProvider, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	DevExpress.Data.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Images.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Objects.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Scheduler.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Scheduler.Web.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Security.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Validation.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Web.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Persistent.Base.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Persistent.BaseImpl.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.ASPxEditors.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.ASPxGridView.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.ASPxHtmlEditor.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.ASPxPivotGrid.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.ASPxScheduler.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.ASPxSpellChecker.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.ASPxTreeList.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Xpo.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.XtraPivotGrid.v8.3.Core, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.XtraReports.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.XtraReports.v8.3.Web, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.XtraScheduler.v8.3.Core, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	Microsoft.JScript, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.Vsa, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	SMDiagnostics, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.Configuration, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Drawing.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.EnterpriseServices, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.IdentityModel, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.Runtime.Remoting, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.Runtime.Serialization, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.Runtime.Serialization.Formatters.Soap, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.ServiceModel, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.ServiceModel.Web, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Location=
+	System.ServiceProcess, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Transactions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Web.Mobile, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Web.RegularExpressions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.WorkflowServices, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Location=
+	System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	VJSharpCodeProvider, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	WebDev.WebHost, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	XafDomain, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=InMemory Module
+	XafDomain, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=InMemory Module
+================================================================================
+
+18.12.08 12:40:17.578	no context	Error ID: 73be1b92-fc29-4778-8ae9-b8f5ba91cd7f
+Date: 12/18/2008 12:40:17 PM
+Request details:
+  Url: http://localhost:2064/Login.aspx?ReturnUrl=/favicon.ico
+  Url referrer: 
+  SessionID: Session is null
+  Request type: GET
+  User agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.5) Gecko/2008120122 Firefox/3.0.5 (.NET CLR 3.5.30729)
+  User IP: 127.0.0.1
+  User: 
+================================================================================
+The error occured
+	Type:       ConfigurationErrorsException
+	Message:    Theme 'XafDefault2' cannot be found in the application or global theme directories. (C:\Erialb\MyProject\DotNetERP\AIR-ERP.Web\web.config line 43)
+	Data:       0 entries
+	Stack trace:
+   at System.Web.Configuration.PagesSection.get_ThemeInternal()
+   at System.Web.UI.PageParser.ProcessConfigSettings()
+   at System.Web.UI.TemplateParser.PrepareParse()
+   at System.Web.UI.TemplateParser.Parse()
+   at System.Web.UI.TemplateParser.Parse(ICollection referencedAssemblies, VirtualPath virtualPath)
+   at System.Web.Compilation.BaseTemplateBuildProvider.get_CodeCompilerType()
+   at System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   at System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   at System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   at System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+	InnerException is null
+
+--------------------------------------------------------------------------------
+Loaded assemblies
+	A_3cd7586c_94e7_464b_bef5_dba29e0a21c0, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=InMemory Module
+	AIR-ERP.Module, Version=1.0.3274.22741, Culture=neutral, PublicKeyToken=null, Location=
+	AIR-ERP.Module.Web, Version=1.0.3274.22757, Culture=neutral, PublicKeyToken=null, Location=
+	AIR-ERP.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null, Location=
+	App_global.asax.b9gmf_gy, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=
+	App_Web_1t7eyhh_, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=
+	CppCodeProvider, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	DevExpress.Data.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Images.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Objects.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Scheduler.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Scheduler.Web.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Security.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Validation.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Web.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Persistent.Base.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Persistent.BaseImpl.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.ASPxEditors.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.ASPxGridView.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.ASPxHtmlEditor.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.ASPxPivotGrid.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.ASPxScheduler.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.ASPxSpellChecker.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.ASPxTreeList.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Xpo.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.XtraPivotGrid.v8.3.Core, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.XtraReports.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.XtraReports.v8.3.Web, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.XtraScheduler.v8.3.Core, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	Microsoft.JScript, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.Vsa, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	SMDiagnostics, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.Configuration, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Drawing.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.EnterpriseServices, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.IdentityModel, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.Runtime.Remoting, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.Runtime.Serialization, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.Runtime.Serialization.Formatters.Soap, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.ServiceModel, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.ServiceModel.Web, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Location=
+	System.ServiceProcess, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Transactions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Web.Mobile, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Web.RegularExpressions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.WorkflowServices, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Location=
+	System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	VJSharpCodeProvider, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	WebDev.WebHost, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	XafDomain, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=InMemory Module
+	XafDomain, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=InMemory Module
+================================================================================
+
+18.12.08 12:40:20.765	no context	================================================================================
+The error occured
+	Type:       InvalidOperationException
+	Message:    Cannot send message
+	Data:       0 entries
+	Stack trace:
+   at DevExpress.ExpressApp.Web.ErrorHandling.SendAlertToAdmin(String errorId, String errorDetails, String errorText, Exception exception)
+	InnerException is null
+
+--------------------------------------------------------------------------------
+Loaded assemblies
+	A_3cd7586c_94e7_464b_bef5_dba29e0a21c0, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=InMemory Module
+	AIR-ERP.Module, Version=1.0.3274.22741, Culture=neutral, PublicKeyToken=null, Location=
+	AIR-ERP.Module.Web, Version=1.0.3274.22757, Culture=neutral, PublicKeyToken=null, Location=
+	AIR-ERP.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null, Location=
+	App_global.asax.b9gmf_gy, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=
+	App_Web_1t7eyhh_, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=
+	CppCodeProvider, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	DevExpress.Data.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Images.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Objects.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Scheduler.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Scheduler.Web.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Security.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Validation.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Web.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Persistent.Base.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Persistent.BaseImpl.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.ASPxEditors.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.ASPxGridView.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.ASPxHtmlEditor.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.ASPxPivotGrid.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.ASPxScheduler.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.ASPxSpellChecker.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.ASPxTreeList.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Xpo.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.XtraPivotGrid.v8.3.Core, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.XtraReports.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.XtraReports.v8.3.Web, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.XtraScheduler.v8.3.Core, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	Microsoft.JScript, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.Vsa, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	SMDiagnostics, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.Configuration, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Drawing.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.EnterpriseServices, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.IdentityModel, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.Runtime.Remoting, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.Runtime.Serialization, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.Runtime.Serialization.Formatters.Soap, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.ServiceModel, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.ServiceModel.Web, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Location=
+	System.ServiceProcess, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Transactions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Web.Mobile, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Web.RegularExpressions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.WorkflowServices, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Location=
+	System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	VJSharpCodeProvider, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	WebDev.WebHost, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	XafDomain, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=InMemory Module
+	XafDomain, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=InMemory Module
+================================================================================
+
+18.12.08 12:40:20.765	no context	Error ID: 701eea5a-e0f4-4d21-b317-c16952aa7c1e
+Date: 12/18/2008 12:40:20 PM
+Request details:
+  Url: http://localhost:2064/Login.aspx?ReturnUrl=/favicon.ico
+  Url referrer: 
+  SessionID: Session is null
+  Request type: GET
+  User agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.5) Gecko/2008120122 Firefox/3.0.5 (.NET CLR 3.5.30729)
+  User IP: 127.0.0.1
+  User: 
+================================================================================
+The error occured
+	Type:       ConfigurationErrorsException
+	Message:    Theme 'XafDefault2' cannot be found in the application or global theme directories. (C:\Erialb\MyProject\DotNetERP\AIR-ERP.Web\web.config line 43)
+	Data:       0 entries
+	Stack trace:
+   at System.Web.Configuration.PagesSection.get_ThemeInternal()
+   at System.Web.UI.PageParser.ProcessConfigSettings()
+   at System.Web.UI.TemplateParser.PrepareParse()
+   at System.Web.UI.TemplateParser.Parse()
+   at System.Web.UI.TemplateParser.Parse(ICollection referencedAssemblies, VirtualPath virtualPath)
+   at System.Web.Compilation.BaseTemplateBuildProvider.get_CodeCompilerType()
+   at System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   at System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp, Boolean noAssert)
+   at System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   at System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+	InnerException is null
+
+--------------------------------------------------------------------------------
+Loaded assemblies
+	A_3cd7586c_94e7_464b_bef5_dba29e0a21c0, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=InMemory Module
+	AIR-ERP.Module, Version=1.0.3274.22741, Culture=neutral, PublicKeyToken=null, Location=
+	AIR-ERP.Module.Web, Version=1.0.3274.22757, Culture=neutral, PublicKeyToken=null, Location=
+	AIR-ERP.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null, Location=
+	App_global.asax.b9gmf_gy, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=
+	App_Web_1t7eyhh_, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=
+	CppCodeProvider, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	DevExpress.Data.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Images.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Objects.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Scheduler.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Scheduler.Web.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Security.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Validation.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Web.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Persistent.Base.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Persistent.BaseImpl.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.ASPxEditors.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.ASPxGridView.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.ASPxHtmlEditor.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.ASPxPivotGrid.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.ASPxScheduler.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.ASPxSpellChecker.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.ASPxTreeList.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Xpo.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.XtraPivotGrid.v8.3.Core, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.XtraReports.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.XtraReports.v8.3.Web, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.XtraScheduler.v8.3.Core, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	Microsoft.JScript, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.Vsa, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	SMDiagnostics, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.Configuration, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Drawing.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.EnterpriseServices, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.IdentityModel, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.Runtime.Remoting, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.Runtime.Serialization, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.Runtime.Serialization.Formatters.Soap, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.ServiceModel, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.ServiceModel.Web, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Location=
+	System.ServiceProcess, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Transactions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Web.Mobile, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Web.RegularExpressions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.WorkflowServices, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Location=
+	System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	VJSharpCodeProvider, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	WebDev.WebHost, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	XafDomain, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=InMemory Module
+	XafDomain, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=InMemory Module
+================================================================================
+
+18.12.08 12:46:13.203	niqdjza5jnxlcq45k4b3tmmp	================================================================================
+18.12.08 12:46:13.203	niqdjza5jnxlcq45k4b3tmmp	Trace Log for fdd648db-3-128740491664843750 is started
+18.12.08 12:46:13.203	niqdjza5jnxlcq45k4b3tmmp	================================================================================
+18.12.08 12:46:13.218	niqdjza5jnxlcq45k4b3tmmp	System Environment
+	OS Version: Microsoft Windows NT 5.1.2600 Service Pack 3
+	.Net Framework Versions: v1.1.4322, v2.0.50727
+
+	CLR Version: 2.0.50727.3053
+	eXpressApp Version: 8.3.2.5087
+Application config
+	FullNameFormat=LastName FirstName MiddleName
+	Modules=
+	ErrorReportEmail=
+	ErrorReportEmailServer=
+	SimpleErrorReportPage=
+	RichErrorReportPage=Error.aspx
+	EnableDiagnosticActions=False
+18.12.08 12:46:13.218	niqdjza5jnxlcq45k4b3tmmp		session.Timeout: 20
+18.12.08 12:46:13.218	niqdjza5jnxlcq45k4b3tmmp		SessionID: niqdjza5jnxlcq45k4b3tmmp
+18.12.08 12:46:13.312	niqdjza5jnxlcq45k4b3tmmp	--------------------------------------------------------------------------------
+18.12.08 12:46:13.312	niqdjza5jnxlcq45k4b3tmmp	Initialize Modules Manager
+18.12.08 12:46:13.375	niqdjza5jnxlcq45k4b3tmmp	--------------------------------------------------------------------------------
+18.12.08 12:46:13.375	niqdjza5jnxlcq45k4b3tmmp	
+18.12.08 12:46:13.437	niqdjza5jnxlcq45k4b3tmmp	--------------------------------------------------------------------------------
+Loaded assemblies
+	A_81e64260_ecc2_4ede_8967_f2c64ad42d3d, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=InMemory Module
+	AIR-ERP.Module, Version=1.0.3274.22741, Culture=neutral, PublicKeyToken=null, Location=
+	AIR-ERP.Module.Web, Version=1.0.3274.22757, Culture=neutral, PublicKeyToken=null, Location=
+	AIR-ERP.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null, Location=
+	App_global.asax.b9gmf_gy, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=
+	App_Web_lfrjtc9u, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=
+	CppCodeProvider, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	DevExpress.Data.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Images.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Objects.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Scheduler.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Scheduler.Web.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Security.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Validation.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Web.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Persistent.Base.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Persistent.BaseImpl.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.ASPxEditors.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.ASPxGridView.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.ASPxHtmlEditor.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.ASPxPivotGrid.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.ASPxScheduler.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.ASPxSpellChecker.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.ASPxTreeList.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Xpo.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.XtraPivotGrid.v8.3.Core, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.XtraReports.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.XtraReports.v8.3.Web, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.XtraScheduler.v8.3.Core, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	Microsoft.JScript, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.Vsa, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	SMDiagnostics, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.Configuration, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Drawing.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.EnterpriseServices, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.IdentityModel, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.Runtime.Remoting, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.Runtime.Serialization, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.Runtime.Serialization.Formatters.Soap, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.ServiceModel, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.ServiceModel.Web, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Location=
+	System.ServiceProcess, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Transactions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Web.Mobile, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Web.RegularExpressions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.WorkflowServices, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Location=
+	System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	VJSharpCodeProvider, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	WebDev.WebHost, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	XafDomain, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=InMemory Module
+	XafDomain, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=InMemory Module
+18.12.08 12:46:15.921	niqdjza5jnxlcq45k4b3tmmp	--------------------------------------------------------------------------------
+18.12.08 12:46:15.921	niqdjza5jnxlcq45k4b3tmmp	Load Model
+18.12.08 12:46:15.921	niqdjza5jnxlcq45k4b3tmmp	Load Schema
+18.12.08 12:46:15.921	niqdjza5jnxlcq45k4b3tmmp	SetupModules
+18.12.08 12:46:18.953	niqdjza5jnxlcq45k4b3tmmp	Customize XPDictionary
+18.12.08 12:46:18.968	niqdjza5jnxlcq45k4b3tmmp	Load object model
+18.12.08 12:46:19.343	niqdjza5jnxlcq45k4b3tmmp	Generate default Model for Actions
+18.12.08 12:46:19.437	niqdjza5jnxlcq45k4b3tmmp	Generate default image sources
+18.12.08 12:46:19.437	niqdjza5jnxlcq45k4b3tmmp	Generate default Model for Property editors
+18.12.08 12:46:19.453	niqdjza5jnxlcq45k4b3tmmp	Generate default Model for Views
+18.12.08 12:46:20.453	niqdjza5jnxlcq45k4b3tmmp	Load DictionaryDifferenceStores' dictionaries
+18.12.08 12:46:20.453	niqdjza5jnxlcq45k4b3tmmp	Collect aspects
+18.12.08 12:46:20.468	niqdjza5jnxlcq45k4b3tmmp	Update model
+18.12.08 12:46:21.296	niqdjza5jnxlcq45k4b3tmmp	Generate default Model for Action containers
+18.12.08 12:46:21.312	niqdjza5jnxlcq45k4b3tmmp	Process localized attribute values
+18.12.08 12:46:21.421	niqdjza5jnxlcq45k4b3tmmp	Load Model Diffs
+18.12.08 12:46:21.687	niqdjza5jnxlcq45k4b3tmmp	Validate Model
+18.12.08 12:46:22.437	niqdjza5jnxlcq45k4b3tmmp	--------------------------------------------------------------------------------
+18.12.08 12:46:22.437	niqdjza5jnxlcq45k4b3tmmp	->GetPopupWindowParams
+18.12.08 12:46:22.437	niqdjza5jnxlcq45k4b3tmmp		Type: DevExpress.ExpressApp.Actions.PopupWindowShowAction
+18.12.08 12:46:22.437	niqdjza5jnxlcq45k4b3tmmp		ID: 958da7d1-281e-4c9b-be36-4dacbf8f8dfe
+18.12.08 12:46:22.437	niqdjza5jnxlcq45k4b3tmmp		Category: Unspecified
+18.12.08 12:46:22.453	niqdjza5jnxlcq45k4b3tmmp	--------------------------------------------------------------------------------
+18.12.08 12:46:22.453	niqdjza5jnxlcq45k4b3tmmp	Checking Compatibility
+18.12.08 12:46:22.453	niqdjza5jnxlcq45k4b3tmmp		ConnectionString: Provider=Microsoft.Jet.OLEDB.4.0;User ID=Admin;Data Source=|DataDirectory|\AIR_ERP.mdb;Mode=Share Deny None;
+18.12.08 12:46:25.265	niqdjza5jnxlcq45k4b3tmmp	Check App Name Compatibility
+18.12.08 12:46:25.281	niqdjza5jnxlcq45k4b3tmmp	Check stored module versions against the versions of the loaded modules
+18.12.08 12:46:25.281	niqdjza5jnxlcq45k4b3tmmp	module 'SystemModule' (DevExpress.ExpressApp.v8.3). Local version: 8.3.2.5087, Version on DB: 8.3.2.5087
+18.12.08 12:46:25.296	niqdjza5jnxlcq45k4b3tmmp	module 'SystemAspNetModule' (DevExpress.ExpressApp.Web.v8.3). Local version: 8.3.2.5087, Version on DB: 8.3.2.5087
+18.12.08 12:46:25.296	niqdjza5jnxlcq45k4b3tmmp	module 'BusinessClassLibraryCustomizationModule' (DevExpress.ExpressApp.Objects.v8.3). Local version: 8.3.2.5087, Version on DB: 8.3.2.5087
+18.12.08 12:46:25.296	niqdjza5jnxlcq45k4b3tmmp	module 'SecurityModule' (DevExpress.ExpressApp.Security.v8.3). Local version: 8.3.2.5087, Version on DB: 8.3.2.5087
+18.12.08 12:46:25.296	niqdjza5jnxlcq45k4b3tmmp	module 'AIR_ERPModule' (AIR-ERP.Module). Local version: 1.0.3274.22741, Version on DB: 1.0.3271.23572
+18.12.08 12:46:25.296	niqdjza5jnxlcq45k4b3tmmp	DatabaseIsOld
+18.12.08 12:46:25.343	niqdjza5jnxlcq45k4b3tmmp	--------------------------------------------------------------------------------
+18.12.08 12:46:25.343	niqdjza5jnxlcq45k4b3tmmp	UpdateDB
+18.12.08 12:46:25.359	niqdjza5jnxlcq45k4b3tmmp		ConnectionString: Provider=Microsoft.Jet.OLEDB.4.0;User ID=Admin;Data Source=|DataDirectory|\AIR_ERP.mdb;Mode=Share Deny None;
+18.12.08 12:46:26.000	niqdjza5jnxlcq45k4b3tmmp	Check App Name Compatibility
+18.12.08 12:46:26.000	niqdjza5jnxlcq45k4b3tmmp	Check stored module versions against the versions of the loaded modules
+18.12.08 12:46:26.000	niqdjza5jnxlcq45k4b3tmmp	module 'SystemModule' (DevExpress.ExpressApp.v8.3). Local version: 8.3.2.5087, Version on DB: 8.3.2.5087
+18.12.08 12:46:26.000	niqdjza5jnxlcq45k4b3tmmp	module 'SystemAspNetModule' (DevExpress.ExpressApp.Web.v8.3). Local version: 8.3.2.5087, Version on DB: 8.3.2.5087
+18.12.08 12:46:26.000	niqdjza5jnxlcq45k4b3tmmp	module 'BusinessClassLibraryCustomizationModule' (DevExpress.ExpressApp.Objects.v8.3). Local version: 8.3.2.5087, Version on DB: 8.3.2.5087
+18.12.08 12:46:26.000	niqdjza5jnxlcq45k4b3tmmp	module 'SecurityModule' (DevExpress.ExpressApp.Security.v8.3). Local version: 8.3.2.5087, Version on DB: 8.3.2.5087
+18.12.08 12:46:26.000	niqdjza5jnxlcq45k4b3tmmp	module 'AIR_ERPModule' (AIR-ERP.Module). Local version: 1.0.3274.22741, Version on DB: 1.0.3271.23572
+18.12.08 12:46:26.000	niqdjza5jnxlcq45k4b3tmmp	DatabaseIsOld
+18.12.08 12:46:27.093	niqdjza5jnxlcq45k4b3tmmp	Module: SystemModule. Old version: 8.3.2.5087. New version: 8.3.2.5087
+18.12.08 12:46:27.093	niqdjza5jnxlcq45k4b3tmmp	Module: SystemAspNetModule. Old version: 8.3.2.5087. New version: 8.3.2.5087
+18.12.08 12:46:27.093	niqdjza5jnxlcq45k4b3tmmp	Module: BusinessClassLibraryCustomizationModule. Old version: 8.3.2.5087. New version: 8.3.2.5087
+18.12.08 12:46:27.093	niqdjza5jnxlcq45k4b3tmmp	Module: SecurityModule. Old version: 8.3.2.5087. New version: 8.3.2.5087
+18.12.08 12:46:27.218	niqdjza5jnxlcq45k4b3tmmp	Module: AIR_ERPModule. Old version: 1.0.3271.23572. New version: 1.0.3274.22741
+18.12.08 12:46:27.218	niqdjza5jnxlcq45k4b3tmmp	Module: AIR_ERPAspNetModule. Old version: 1.0.3271.25544. New version: 1.0.3274.22757
+18.12.08 12:46:27.218	niqdjza5jnxlcq45k4b3tmmp	Module: ValidationModule. Old version: 8.3.2.5087. New version: 8.3.2.5087
+18.12.08 12:46:27.281	niqdjza5jnxlcq45k4b3tmmp	Check App Name Compatibility
+18.12.08 12:46:27.281	niqdjza5jnxlcq45k4b3tmmp	Check stored module versions against the versions of the loaded modules
+18.12.08 12:46:27.281	niqdjza5jnxlcq45k4b3tmmp	module 'SystemModule' (DevExpress.ExpressApp.v8.3). Local version: 8.3.2.5087, Version on DB: 8.3.2.5087
+18.12.08 12:46:27.281	niqdjza5jnxlcq45k4b3tmmp	module 'SystemAspNetModule' (DevExpress.ExpressApp.Web.v8.3). Local version: 8.3.2.5087, Version on DB: 8.3.2.5087
+18.12.08 12:46:27.281	niqdjza5jnxlcq45k4b3tmmp	module 'BusinessClassLibraryCustomizationModule' (DevExpress.ExpressApp.Objects.v8.3). Local version: 8.3.2.5087, Version on DB: 8.3.2.5087
+18.12.08 12:46:27.281	niqdjza5jnxlcq45k4b3tmmp	module 'SecurityModule' (DevExpress.ExpressApp.Security.v8.3). Local version: 8.3.2.5087, Version on DB: 8.3.2.5087
+18.12.08 12:46:27.281	niqdjza5jnxlcq45k4b3tmmp	module 'AIR_ERPModule' (AIR-ERP.Module). Local version: 1.0.3274.22741, Version on DB: 1.0.3274.22741
+18.12.08 12:46:27.281	niqdjza5jnxlcq45k4b3tmmp	module 'AIR_ERPAspNetModule' (AIR-ERP.Module.Web). Local version: 1.0.3274.22757, Version on DB: 1.0.3274.22757
+18.12.08 12:46:27.281	niqdjza5jnxlcq45k4b3tmmp	module 'ValidationModule' (DevExpress.ExpressApp.Validation.v8.3). Local version: 8.3.2.5087, Version on DB: 8.3.2.5087
+18.12.08 12:46:27.546	niqdjza5jnxlcq45k4b3tmmp	--------------------------------------------------------------------------------
+18.12.08 12:46:27.546	niqdjza5jnxlcq45k4b3tmmp	<- GetPopupWindowParams
+18.12.08 12:46:35.687	niqdjza5jnxlcq45k4b3tmmp		GC.GetTotalMemory(false) (Mb): 17
+18.12.08 12:46:35.687	niqdjza5jnxlcq45k4b3tmmp		TotalApplications: 1
+18.12.08 12:46:35.687	niqdjza5jnxlcq45k4b3tmmp		DisposedApplications: 0
+18.12.08 12:46:35.687	niqdjza5jnxlcq45k4b3tmmp		FinalizedApplications: 0
+18.12.08 12:46:35.687	niqdjza5jnxlcq45k4b3tmmp		Details: 
+SessionID	CreatedOn	LastAccessOn	DisposedOn	FinalizedOn
+UserName	niqdjza5jnxlcq45k4b3tmmp	12/18/2008 12:46:11 PM	12/18/2008 12:46:35 PM	1/1/0001 12:00:00 AM	1/1/0001 12:00:00 AM
+N/A
+
+18.12.08 12:46:36.000	niqdjza5jnxlcq45k4b3tmmp	--------------------------------------------------------------------------------
+18.12.08 12:46:36.000	niqdjza5jnxlcq45k4b3tmmp	ImageLoader: Image not found by name in the following sources:
+18.12.08 12:46:36.000	niqdjza5jnxlcq45k4b3tmmp		ImageName: _Large
+18.12.08 12:46:36.000	niqdjza5jnxlcq45k4b3tmmp		Sources: FileImageSource, Images
+AssemblyResourceImageSource, DevExpress.ExpressApp.v8.3, Images
+AssemblyResourceImageSource, DevExpress.ExpressApp.Web.v8.3, Images
+AssemblyResourceImageSource, DevExpress.ExpressApp.Objects.v8.3, Images
+AssemblyResourceImageSource, DevExpress.ExpressApp.Security.v8.3, Images
+AssemblyResourceImageSource, AIR-ERP.Module, Images
+AssemblyResourceImageSource, AIR-ERP.Module.Web, Images
+AssemblyResourceImageSource, DevExpress.ExpressApp.Validation.v8.3, Images
+AssemblyResourceImageSource, DevExpress.ExpressApp.Images.v8.3, Images
+
+18.12.08 12:46:51.906	niqdjza5jnxlcq45k4b3tmmp	'Company' property editor: new value is 'Roadmax Marketing Inc.'
+18.12.08 12:46:54.187	niqdjza5jnxlcq45k4b3tmmp	'Employee' property editor: new value is 'Admin'
+18.12.08 12:46:55.656	niqdjza5jnxlcq45k4b3tmmp	--------------------------------------------------------------------------------
+18.12.08 12:46:55.656	niqdjza5jnxlcq45k4b3tmmp	Execute action
+18.12.08 12:46:55.656	niqdjza5jnxlcq45k4b3tmmp		Type: DevExpress.ExpressApp.Actions.SimpleAction
+18.12.08 12:46:55.656	niqdjza5jnxlcq45k4b3tmmp		ID: Logon
+18.12.08 12:46:55.656	niqdjza5jnxlcq45k4b3tmmp		Category: PopupActions
+18.12.08 12:46:55.656	niqdjza5jnxlcq45k4b3tmmp		ContextName: Please Login
+18.12.08 12:46:55.656	niqdjza5jnxlcq45k4b3tmmp		IsRoot: True
+18.12.08 12:46:55.656	niqdjza5jnxlcq45k4b3tmmp		Selection.Count: 1
+18.12.08 12:46:55.656	niqdjza5jnxlcq45k4b3tmmp		CurrentObject: AIR_ERP.Module.MyLogonParameters
+18.12.08 12:46:55.656	niqdjza5jnxlcq45k4b3tmmp	--------------------------------------------------------------------------------
+18.12.08 12:46:55.656	niqdjza5jnxlcq45k4b3tmmp	Execute action
+18.12.08 12:46:55.656	niqdjza5jnxlcq45k4b3tmmp		Type: DevExpress.ExpressApp.Actions.PopupWindowShowAction
+18.12.08 12:46:55.671	niqdjza5jnxlcq45k4b3tmmp		ID: 958da7d1-281e-4c9b-be36-4dacbf8f8dfe
+18.12.08 12:46:55.671	niqdjza5jnxlcq45k4b3tmmp		Category: Unspecified
+18.12.08 12:46:55.671	niqdjza5jnxlcq45k4b3tmmp	--------------------------------------------------------------------------------
+18.12.08 12:46:55.671	niqdjza5jnxlcq45k4b3tmmp	Start logon process
+18.12.08 12:46:55.687	niqdjza5jnxlcq45k4b3tmmp	--------------------------------------------------------------------------------
+18.12.08 12:46:55.687	niqdjza5jnxlcq45k4b3tmmp	Logon successful
+18.12.08 12:46:55.718	niqdjza5jnxlcq45k4b3tmmp	The FormsAuthentication timeout is less than the ASP.NET Session timeout: '0' and '20'. The the ASP.NET Session timeout is used for FormsAuthentication.
+18.12.08 12:46:55.718	niqdjza5jnxlcq45k4b3tmmp		CurrentUserName: Admin
+18.12.08 12:46:55.734	niqdjza5jnxlcq45k4b3tmmp	--------------------------------------------------------------------------------
+18.12.08 12:46:55.734	niqdjza5jnxlcq45k4b3tmmp	Logon completed
+18.12.08 12:46:55.765	niqdjza5jnxlcq45k4b3tmmp	Action '958da7d1-281e-4c9b-be36-4dacbf8f8dfe' done
+18.12.08 12:46:55.765	niqdjza5jnxlcq45k4b3tmmp	Action 'Logon' done
+18.12.08 12:46:56.421	niqdjza5jnxlcq45k4b3tmmp	--------------------------------------------------------------------------------
+18.12.08 12:46:56.421	niqdjza5jnxlcq45k4b3tmmp	Initialize 'ShowNavigationItem' action items
+18.12.08 12:46:56.500	niqdjza5jnxlcq45k4b3tmmp	--------------------------------------------------------------------------------
+18.12.08 12:46:56.500	niqdjza5jnxlcq45k4b3tmmp	Execute action
+18.12.08 12:46:56.500	niqdjza5jnxlcq45k4b3tmmp		Type: DevExpress.ExpressApp.Actions.SingleChoiceAction
+18.12.08 12:46:56.500	niqdjza5jnxlcq45k4b3tmmp		ID: ShowNavigationItem
+18.12.08 12:46:56.500	niqdjza5jnxlcq45k4b3tmmp		Category: ViewsNavigation
+18.12.08 12:46:56.500	niqdjza5jnxlcq45k4b3tmmp		SelectedItem: Sales Order
+18.12.08 12:46:56.625	niqdjza5jnxlcq45k4b3tmmp	Action 'ShowNavigationItem' done
+18.12.08 12:46:56.859	niqdjza5jnxlcq45k4b3tmmp	--------------------------------------------------------------------------------
+18.12.08 12:46:56.859	niqdjza5jnxlcq45k4b3tmmp	Execute action
+18.12.08 12:46:56.859	niqdjza5jnxlcq45k4b3tmmp		Type: DevExpress.ExpressApp.Actions.SingleChoiceAction
+18.12.08 12:46:56.859	niqdjza5jnxlcq45k4b3tmmp		ID: ShowNavigationItem
+18.12.08 12:46:56.859	niqdjza5jnxlcq45k4b3tmmp		Category: ViewsNavigation
+18.12.08 12:46:56.859	niqdjza5jnxlcq45k4b3tmmp		ContextName: Sales Order
+18.12.08 12:46:56.875	niqdjza5jnxlcq45k4b3tmmp		IsRoot: True
+18.12.08 12:46:56.875	niqdjza5jnxlcq45k4b3tmmp		Selection.Count: 0
+18.12.08 12:46:56.875	niqdjza5jnxlcq45k4b3tmmp		CurrentObject: <not specified>
+18.12.08 12:46:56.875	niqdjza5jnxlcq45k4b3tmmp		SelectedItem: Sales Order
+18.12.08 12:46:56.921	niqdjza5jnxlcq45k4b3tmmp	Action 'ShowNavigationItem' done
+18.12.08 12:46:57.250	niqdjza5jnxlcq45k4b3tmmp	--------------------------------------------------------------------------------
+18.12.08 12:46:57.250	niqdjza5jnxlcq45k4b3tmmp	ImageLoader: Image not found by name in the following sources:
+18.12.08 12:46:57.250	niqdjza5jnxlcq45k4b3tmmp		ImageName: MenuBar_Unlink_Large
+18.12.08 12:46:57.250	niqdjza5jnxlcq45k4b3tmmp		Sources: FileImageSource, Images
+AssemblyResourceImageSource, DevExpress.ExpressApp.v8.3, Images
+AssemblyResourceImageSource, DevExpress.ExpressApp.Web.v8.3, Images
+AssemblyResourceImageSource, DevExpress.ExpressApp.Objects.v8.3, Images
+AssemblyResourceImageSource, DevExpress.ExpressApp.Security.v8.3, Images
+AssemblyResourceImageSource, AIR-ERP.Module, Images
+AssemblyResourceImageSource, AIR-ERP.Module.Web, Images
+AssemblyResourceImageSource, DevExpress.ExpressApp.Validation.v8.3, Images
+AssemblyResourceImageSource, DevExpress.ExpressApp.Images.v8.3, Images
+
+18.12.08 12:46:57.296	niqdjza5jnxlcq45k4b3tmmp	--------------------------------------------------------------------------------
+18.12.08 12:46:57.296	niqdjza5jnxlcq45k4b3tmmp	ImageLoader: Image not found by name in the following sources:
+18.12.08 12:46:57.296	niqdjza5jnxlcq45k4b3tmmp		ImageName: Logoff_Large
+18.12.08 12:46:57.296	niqdjza5jnxlcq45k4b3tmmp		Sources: FileImageSource, Images
+AssemblyResourceImageSource, DevExpress.ExpressApp.v8.3, Images
+AssemblyResourceImageSource, DevExpress.ExpressApp.Web.v8.3, Images
+AssemblyResourceImageSource, DevExpress.ExpressApp.Objects.v8.3, Images
+AssemblyResourceImageSource, DevExpress.ExpressApp.Security.v8.3, Images
+AssemblyResourceImageSource, AIR-ERP.Module, Images
+AssemblyResourceImageSource, AIR-ERP.Module.Web, Images
+AssemblyResourceImageSource, DevExpress.ExpressApp.Validation.v8.3, Images
+AssemblyResourceImageSource, DevExpress.ExpressApp.Images.v8.3, Images
+
+18.12.08 12:47:05.093	niqdjza5jnxlcq45k4b3tmmp	--------------------------------------------------------------------------------
+18.12.08 12:47:05.093	niqdjza5jnxlcq45k4b3tmmp	Execute action
+18.12.08 12:47:05.093	niqdjza5jnxlcq45k4b3tmmp		Type: DevExpress.ExpressApp.Actions.SingleChoiceAction
+18.12.08 12:47:05.093	niqdjza5jnxlcq45k4b3tmmp		ID: ShowNavigationItem
+18.12.08 12:47:05.093	niqdjza5jnxlcq45k4b3tmmp		Category: ViewsNavigation
+18.12.08 12:47:05.093	niqdjza5jnxlcq45k4b3tmmp		ContextName: Sales Order
+18.12.08 12:47:05.093	niqdjza5jnxlcq45k4b3tmmp		IsRoot: True
+18.12.08 12:47:05.109	niqdjza5jnxlcq45k4b3tmmp		Selection.Count: 0
+18.12.08 12:47:05.109	niqdjza5jnxlcq45k4b3tmmp		CurrentObject: <not specified>
+18.12.08 12:47:05.109	niqdjza5jnxlcq45k4b3tmmp		SelectedItem: Business Partner
+18.12.08 12:47:05.187	niqdjza5jnxlcq45k4b3tmmp	Action 'ShowNavigationItem' done
+18.12.08 12:47:09.109	niqdjza5jnxlcq45k4b3tmmp	--------------------------------------------------------------------------------
+18.12.08 12:47:09.109	niqdjza5jnxlcq45k4b3tmmp	Execute action
+18.12.08 12:47:09.109	niqdjza5jnxlcq45k4b3tmmp		Type: DevExpress.ExpressApp.Actions.SimpleAction
+18.12.08 12:47:09.109	niqdjza5jnxlcq45k4b3tmmp		ID: ListViewShowObject
+18.12.08 12:47:09.109	niqdjza5jnxlcq45k4b3tmmp		Category: ListView
+18.12.08 12:47:09.109	niqdjza5jnxlcq45k4b3tmmp		ContextName: Business Partner
+18.12.08 12:47:09.109	niqdjza5jnxlcq45k4b3tmmp		IsRoot: True
+18.12.08 12:47:09.109	niqdjza5jnxlcq45k4b3tmmp		Selection.Count: 1
+18.12.08 12:47:09.109	niqdjza5jnxlcq45k4b3tmmp		CurrentObject: SAMPLE SUPLLIER
+18.12.08 12:47:09.265	niqdjza5jnxlcq45k4b3tmmp	Action 'ListViewShowObject' done
+18.12.08 12:47:24.296	niqdjza5jnxlcq45k4b3tmmp	--------------------------------------------------------------------------------
+18.12.08 12:47:24.296	niqdjza5jnxlcq45k4b3tmmp	Execute action
+18.12.08 12:47:24.312	niqdjza5jnxlcq45k4b3tmmp		Type: DevExpress.ExpressApp.Actions.SingleChoiceAction
+18.12.08 12:47:24.312	niqdjza5jnxlcq45k4b3tmmp		ID: ShowNavigationItem
+18.12.08 12:47:24.312	niqdjza5jnxlcq45k4b3tmmp		Category: ViewsNavigation
+18.12.08 12:47:24.312	niqdjza5jnxlcq45k4b3tmmp		ContextName: Business Partner
+18.12.08 12:47:24.312	niqdjza5jnxlcq45k4b3tmmp		IsRoot: True
+18.12.08 12:47:24.312	niqdjza5jnxlcq45k4b3tmmp		Selection.Count: 1
+18.12.08 12:47:24.312	niqdjza5jnxlcq45k4b3tmmp		CurrentObject: SAMPLE SUPLLIER
+18.12.08 12:47:24.312	niqdjza5jnxlcq45k4b3tmmp		SelectedItem: Company
+18.12.08 12:47:24.484	niqdjza5jnxlcq45k4b3tmmp	Action 'ShowNavigationItem' done
+18.12.08 12:47:26.500	niqdjza5jnxlcq45k4b3tmmp	--------------------------------------------------------------------------------
+18.12.08 12:47:26.500	niqdjza5jnxlcq45k4b3tmmp	Execute action
+18.12.08 12:47:26.500	niqdjza5jnxlcq45k4b3tmmp		Type: DevExpress.ExpressApp.Actions.SingleChoiceAction
+18.12.08 12:47:26.500	niqdjza5jnxlcq45k4b3tmmp		ID: ShowNavigationItem
+18.12.08 12:47:26.500	niqdjza5jnxlcq45k4b3tmmp		Category: ViewsNavigation
+18.12.08 12:47:26.500	niqdjza5jnxlcq45k4b3tmmp		ContextName: Company
+18.12.08 12:47:26.500	niqdjza5jnxlcq45k4b3tmmp		IsRoot: True
+18.12.08 12:47:26.500	niqdjza5jnxlcq45k4b3tmmp		Selection.Count: 0
+18.12.08 12:47:26.500	niqdjza5jnxlcq45k4b3tmmp		CurrentObject: <not specified>
+18.12.08 12:47:26.500	niqdjza5jnxlcq45k4b3tmmp		SelectedItem: Business Partner
+18.12.08 12:47:26.593	niqdjza5jnxlcq45k4b3tmmp	Action 'ShowNavigationItem' done
+18.12.08 12:47:53.812	niqdjza5jnxlcq45k4b3tmmp	--------------------------------------------------------------------------------
+18.12.08 12:47:53.812	niqdjza5jnxlcq45k4b3tmmp	Execute action
+18.12.08 12:47:53.812	niqdjza5jnxlcq45k4b3tmmp		Type: DevExpress.ExpressApp.Actions.SingleChoiceAction
+18.12.08 12:47:53.812	niqdjza5jnxlcq45k4b3tmmp		ID: New
+18.12.08 12:47:53.812	niqdjza5jnxlcq45k4b3tmmp		Category: ObjectsCreation
+18.12.08 12:47:53.812	niqdjza5jnxlcq45k4b3tmmp		ContextName: Business Partner
+18.12.08 12:47:53.812	niqdjza5jnxlcq45k4b3tmmp		IsRoot: True
+18.12.08 12:47:53.812	niqdjza5jnxlcq45k4b3tmmp		Selection.Count: 0
+18.12.08 12:47:53.828	niqdjza5jnxlcq45k4b3tmmp		CurrentObject: <not specified>
+18.12.08 12:47:53.828	niqdjza5jnxlcq45k4b3tmmp		SelectedItem: Business Partner
+18.12.08 12:47:53.937	niqdjza5jnxlcq45k4b3tmmp	Action 'New' done
+18.12.08 12:51:42.531	niqdjza5jnxlcq45k4b3tmmp	Dispose application
+18.12.08 12:51:42.531	niqdjza5jnxlcq45k4b3tmmp	====================
+18.12.08 12:51:42.812	no context	================================================================================
+The error occured
+	Type:       NullReferenceException
+	Message:    Object reference not set to an instance of an object.
+	Data:       0 entries
+	Stack trace:
+   at DevExpress.ExpressApp.SecuritySystem.IsGranted(IPermission permission)
+   at DevExpress.ExpressApp.DataManipulationRight.HasPermissionTo(Type objectType, ObjectAccess objectAccessType, SecurityContextList contexts)
+   at DevExpress.ExpressApp.DataManipulationRight.HasPermissionTo(Type objectType, ObjectAccess objectAccessType, String memberName, Object targetObject, CollectionSourceBase collectionSource)
+   at DevExpress.ExpressApp.DataManipulationRight.CanEdit(Type objectType, String memberName, Object targetObject, CollectionSourceBase collectionSource)
+   at DevExpress.ExpressApp.SystemModule.DetailViewController.UpdateActionState()
+   at DevExpress.ExpressApp.Web.SystemModule.WebDetailViewController.UpdateActionState()
+   at DevExpress.ExpressApp.SystemModule.DetailViewController.NewObjectAction_Changed(Object sender, ActionChangedEventArgs e)
+   at DevExpress.ExpressApp.Actions.ActionBase.OnChanged(ActionChangedEventArgs args)
+   at DevExpress.ExpressApp.Actions.ActionBase.RaiseChanged(ActionChangedType propertyType)
+   at DevExpress.ExpressApp.Actions.ActionBase.activeList_ResultValueChanged(Object sender, BoolValueChangedEventArgs e)
+   at DevExpress.ExpressApp.Utils.BoolList.OnResultValueChanged(Boolean oldResultValue, Boolean resultValue)
+   at DevExpress.ExpressApp.Utils.BoolList.EndUpdate()
+   at DevExpress.ExpressApp.Utils.BoolList.set_Item(String key, Boolean value)
+   at DevExpress.ExpressApp.Utils.BoolList.SetItemValue(String key, Boolean value)
+   at DevExpress.ExpressApp.Controller.UpdateActionActivity(ActionBase action)
+   at DevExpress.ExpressApp.ViewController.UpdateActionActivity(ActionBase action)
+   at DevExpress.ExpressApp.Controller.UpdateActionsActivity()
+   at DevExpress.ExpressApp.Controller.activeList_ResultValueChanged(Object sender, BoolValueChangedEventArgs e)
+   at DevExpress.ExpressApp.Utils.BoolList.OnResultValueChanged(Boolean oldResultValue, Boolean resultValue)
+   at DevExpress.ExpressApp.Utils.BoolList.EndUpdate()
+   at DevExpress.ExpressApp.Utils.BoolList.set_Item(String key, Boolean value)
+   at DevExpress.ExpressApp.Utils.BoolList.SetItemValue(String key, Boolean value)
+   at DevExpress.ExpressApp.Frame.Dispose()
+   at DevExpress.ExpressApp.Web.WebApplication.DisposeCore()
+   at DevExpress.ExpressApp.XafApplication.Dispose(Boolean disposing)
+   at System.ComponentModel.Component.Dispose()
+   at DevExpress.ExpressApp.XafApplication.Dispose()
+   at DevExpress.ExpressApp.Web.WebApplication.DisposeInstance(HttpSessionState session)
+	InnerException is null
+
+--------------------------------------------------------------------------------
+Loaded assemblies
+	A_81e64260_ecc2_4ede_8967_f2c64ad42d3d, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=InMemory Module
+	AIR-ERP.Module, Version=1.0.3274.22741, Culture=neutral, PublicKeyToken=null, Location=
+	AIR-ERP.Module.Web, Version=1.0.3274.22757, Culture=neutral, PublicKeyToken=null, Location=
+	AIR-ERP.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null, Location=
+	App_global.asax.b9gmf_gy, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=
+	App_Theme_XafDefault.bzu365sj, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=
+	App_Web_lfrjtc9u, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=
+	CppCodeProvider, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	DevExpress.Data.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Images.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Objects.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Scheduler.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Scheduler.Web.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Security.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Validation.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Web.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Persistent.Base.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Persistent.BaseImpl.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Utils.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.ASPxEditors.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.ASPxGridView.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.ASPxHtmlEditor.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.ASPxPivotGrid.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.ASPxScheduler.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.ASPxSpellChecker.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.ASPxTreeList.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Web.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Xpo.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.XtraPivotGrid.v8.3.Core, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.XtraReports.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.XtraReports.v8.3.Web, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.XtraScheduler.v8.3.Core, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	Microsoft.JScript, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.Vsa, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	SMDiagnostics, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.Configuration, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Drawing.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.EnterpriseServices, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.IdentityModel, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.Runtime.Remoting, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.Runtime.Serialization, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.Runtime.Serialization.Formatters.Soap, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.ServiceModel, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.ServiceModel.Web, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Location=
+	System.ServiceProcess, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Transactions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Web.Mobile, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Web.RegularExpressions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.WorkflowServices, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Location=
+	System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	VJSharpCodeProvider, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	WebDev.WebHost, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	XafDomain, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=InMemory Module
+	XafDomain, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=InMemory Module
+================================================================================
+
