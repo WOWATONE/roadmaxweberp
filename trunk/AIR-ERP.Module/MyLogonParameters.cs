@@ -17,9 +17,11 @@ namespace AIR_ERP.Module
     {
         private ObjectSpace objectSpace;
         private ReadOnlyCollection<Company> availableCompanies;
+        private XPCollection<Branch> availableBranch;
         private XPCollection<Employee> availableUsers;
 
         private Company company;
+        private Branch branch;
         private Employee employee;
         private string password;
 
@@ -35,6 +37,13 @@ namespace AIR_ERP.Module
             if (employee != null && availableUsers.IndexOf(employee) == -1)
             {
                 Employee = null;
+            }
+
+            availableBranch.Criteria = new BinaryOperator("Company", Company);
+
+            if (branch != null && availableBranch.IndexOf(branch) == -1)
+            {
+                branch = null;
             }
         }
 
@@ -60,6 +69,22 @@ namespace AIR_ERP.Module
                 return availableCompanies;
             }
         }
+
+        [Browsable(false)]
+        public XPCollection<Branch> AvailableBranch
+        {
+            get
+            {
+                if (availableBranch == null)
+                {
+                    availableBranch = new XPCollection<Branch>(ObjectSpace.Session);
+                    availableBranch.BindingBehavior = CollectionBindingBehavior.AllowNone;
+                    RefreshAvailableUsers();
+                }
+                return availableBranch;
+            }
+        }
+
         [Browsable(false)]
         public XPCollection<Employee> AvailableUsers
         {
@@ -82,6 +107,21 @@ namespace AIR_ERP.Module
             set
             {
                 company = value;
+                RefreshAvailableUsers();
+            }
+        }
+
+        [DataSourceProperty("AvailableBranch"), ImmediatePostData]
+        public Branch Branch
+        {
+            get { return branch; }
+            set
+            {
+                branch = value;
+                if (PropertyChanged != null)
+                {
+                    PropertyChanged(this, new PropertyChangedEventArgs("Branch"));
+                }
                 RefreshAvailableUsers();
             }
         }

@@ -446,8 +446,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>2064</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>
-          </IISUrl>
+          <IISUrl>http://localhost/AIR-ERP</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
