@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Application>
-	<Skins Current="Xmas 2008 Blue" />
+	<Skins Current="Dark Side" />
 	<SchemaModules>
 		<SchemaModule Name="SystemWindowsFormsModule" Version="8.3.2.5087" IsNewNode="True" />
 		<SchemaModule Name="ValidationModule" Version="8.3.2.5087" IsNewNode="True" />
@@ -17,12 +17,16 @@
 		<Template ID="DevExpress.ExpressApp.Win.Templates.NestedFrameTemplate" IsNewNode="True">
 			<XtraBarsCustomization ID="Term_AuditTrail_ListView_BarsCustomization" IsNewNode="True" />
 			<XtraBarsCustomization ID="UnitOfMeasure_AuditTrail_ListView_BarsCustomization" IsNewNode="True" />
+			<XtraBarsCustomization ID="Bank_AuditTrail_ListView_BarsCustomization" IsNewNode="True" />
+			<XtraBarsCustomization ID="BankAccount_AuditTrail_ListView_BarsCustomization" IsNewNode="True" />
 		</Template>
 		<Template ID="DevExpress.ExpressApp.Win.Templates.DetailViewForm" IsNewNode="True">
 			<FormState ID="Term_DetailView" State="Normal" X="272" Y="102" Width="798" Height="598" IsNewNode="True" />
 			<NavBarCustomization IsNewNode="True" />
 			<XtraBarsCustomization ID="Default" IsNewNode="True" />
 			<FormState ID="UnitOfMeasure_DetailView" State="Normal" X="185" Y="140" Width="798" Height="598" IsNewNode="True" />
+			<FormState ID="Bank_DetailView" State="Normal" X="379" Y="137" Width="798" Height="598" IsNewNode="True" />
+			<FormState ID="BankAccount_DetailView" State="Normal" X="265" Y="91" Width="800" Height="594" IsNewNode="True" />
 		</Template>
 	</Templates>
 </Application>
