@@ -1,16 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Application>
+	<Views>
+		<ListView ID="BusinessPartner_LookupListView">
+			<Columns>
+				<ColumnInfo PropertyName="BusinessPartnerName" Index="0" />
+			</Columns>
+		</ListView>
+	</Views>
 	<Skins Current="Dark Side" />
 	<SchemaModules>
 		<SchemaModule Name="SystemWindowsFormsModule" Version="8.3.2.5087" IsNewNode="True" />
 		<SchemaModule Name="ValidationModule" Version="8.3.2.5087" IsNewNode="True" />
 	</SchemaModules>
 	<Templates>
+		<Template ID="DevExpress.ExpressApp.Win.Templates.PopupForm">
+			<FormState ID="RuleSetValidationResult_ByTarget_Error_DetailView" State="Normal" X="460" Y="237" Width="360" Height="296" IsNewNode="True" />
+		</Template>
 		<Template ID="DevExpress.ExpressApp.Win.Templates.MainForm" NavigationWidth="146" NavigationDock="Left" NavigationVisibility="Visible" IsNewNode="True">
 			<FormState ID="Default" State="Maximized" MaximizedOnScreen="\\.\DISPLAY1" X="88" Y="116" Width="798" Height="598" IsNewNode="True" />
 			<NavBarCustomization Width="140" IsNewNode="True">
-				<Group ID="Accounts Receivable" IsNewNode="True" />
 				<Group ID="Master Files" IsNewNode="True" />
+				<Group ID="Accounts Receivable" IsNewNode="True" />
 			</NavBarCustomization>
 			<XtraBarsCustomization ID="Default" IsNewNode="True" />
 		</Template>
@@ -19,6 +29,18 @@
 			<XtraBarsCustomization ID="UnitOfMeasure_AuditTrail_ListView_BarsCustomization" IsNewNode="True" />
 			<XtraBarsCustomization ID="Bank_AuditTrail_ListView_BarsCustomization" IsNewNode="True" />
 			<XtraBarsCustomization ID="BankAccount_AuditTrail_ListView_BarsCustomization" IsNewNode="True" />
+			<XtraBarsCustomization ID="DRHeader_AuditTrail_ListView_BarsCustomization" IsNewNode="True" />
+			<XtraBarsCustomization ID="DRItems_AuditTrail_ListView_BarsCustomization" IsNewNode="True" />
+			<XtraBarsCustomization ID="DRHeader_DRItem_ListView_BarsCustomization" IsNewNode="True" />
+			<XtraBarsCustomization ID="RuleSetValidationResultItem_ByTarget_ListView_BarsCustomization" IsNewNode="True" />
+			<XtraBarsCustomization ID="DRHeader_DROthers_ListView_BarsCustomization" IsNewNode="True" />
+			<XtraBarsCustomization ID="DROther_AuditTrail_ListView_BarsCustomization" IsNewNode="True" />
+			<XtraBarsCustomization ID="SOHeader_SOItem_ListView_BarsCustomization" IsNewNode="True" />
+			<XtraBarsCustomization ID="SOItems_AuditTrail_ListView_BarsCustomization" IsNewNode="True" />
+			<XtraBarsCustomization ID="SOHeader_SOOthers_ListView_BarsCustomization" IsNewNode="True" />
+			<XtraBarsCustomization ID="SOOther_AuditTrail_ListView_BarsCustomization" IsNewNode="True" />
+			<XtraBarsCustomization ID="User_Roles_ListView_BarsCustomization" IsNewNode="True" />
+			<XtraBarsCustomization ID="ARVHeader_AuditTrail_ListView_BarsCustomization" IsNewNode="True" />
 		</Template>
 		<Template ID="DevExpress.ExpressApp.Win.Templates.DetailViewForm" IsNewNode="True">
 			<FormState ID="Term_DetailView" State="Normal" X="272" Y="102" Width="798" Height="598" IsNewNode="True" />
@@ -27,6 +49,13 @@
 			<FormState ID="UnitOfMeasure_DetailView" State="Normal" X="185" Y="140" Width="798" Height="598" IsNewNode="True" />
 			<FormState ID="Bank_DetailView" State="Normal" X="379" Y="137" Width="798" Height="598" IsNewNode="True" />
 			<FormState ID="BankAccount_DetailView" State="Normal" X="265" Y="91" Width="800" Height="594" IsNewNode="True" />
+			<FormState ID="DRHeader_DetailView" State="Normal" X="174" Y="113" Width="798" Height="598" IsNewNode="True" />
+			<FormState ID="DRItems_DetailView" State="Normal" X="132" Y="174" Width="798" Height="598" IsNewNode="True" />
+			<FormState ID="DROther_DetailView" State="Normal" X="88" Y="116" Width="798" Height="598" IsNewNode="True" />
+			<FormState ID="SOHeader_DetailView" State="Normal" X="22" Y="29" Width="798" Height="598" IsNewNode="True" />
+			<FormState ID="SOItems_DetailView" State="Normal" X="44" Y="58" Width="798" Height="598" IsNewNode="True" />
+			<FormState ID="SOOther_DetailView" State="Normal" X="88" Y="116" Width="798" Height="598" IsNewNode="True" />
+			<FormState ID="ARVHeader_DetailView" State="Normal" X="110" Y="145" Width="798" Height="598" IsNewNode="True" />
 		</Template>
 	</Templates>
 </Application>
