@@ -139,6 +139,47 @@ namespace AIR_ERP.Module
             }
         }
 
+        [Persistent("TotalAmount")]
+        private decimal _TotalAmount = 0m;
+        [PersistentAlias("SOItems[].Sum(Price * Quantity)")]
+        public decimal TotalAmount
+        {
+            get
+            {
+                return _TotalAmount;
+            }
+        }
+
+        public void UpdateTotal()
+        {
+            _TotalAmount = 0m;
+            foreach (SOItems soItem in SOItem)
+            {
+                _TotalAmount += soItem.Price * soItem.Quantity - soItem.Discount;
+            }
+            foreach (SOOther soOther in SOOthers)
+            {
+                _TotalAmount += soOther.Price * soOther.Quantity;
+            }
+            //_TotalAmount = Convert.ToDecimal(Evaluate("Lines[].Sum(Amount)"));
+            OnChanged("TotalAmount");
+        }
+
+        protected override XPCollection<T> CreateCollection<T>(DevExpress.Xpo.Metadata.XPMemberInfo property)
+        {
+            XPCollection<T> coll = base.CreateCollection<T>(property);
+            if (property.Name == "SOItem" || property.Name == "SOOthers")
+            {
+                coll.CollectionChanged += new XPCollectionChangedEventHandler(coll_CollectionChanged);
+            }
+            return coll;
+        }
+        void coll_CollectionChanged(object sender, XPCollectionChangedEventArgs e)
+        {
+            UpdateTotal();
+            //UpdateCount();
+        }
+
         [Association("SOHeader-SOOthers"), Aggregated]
         public XPCollection<SOOther> SOOthers
         {
@@ -164,6 +205,7 @@ namespace AIR_ERP.Module
 
     [DefaultClassOptions]
     [NavigationItem(false)]
+    [CreatableItem(false)]
     [RuleCriteria("RuleSOItemsQuantity", DefaultContexts.Save, "Quantity != 0", "Quantity shouldn't be 0", SkipNullOrEmptyValues = false)]
     [RuleCriteria("RuleSOItemsPrice", DefaultContexts.Save, "Price != 0", "Price shouldn't be 0", SkipNullOrEmptyValues = false)]
     public class SOItems : BaseObject
@@ -220,6 +262,7 @@ namespace AIR_ERP.Module
         }
 
         private Decimal price;
+        [ImmediatePostData]
         public Decimal Price
         {
             get
@@ -229,10 +272,15 @@ namespace AIR_ERP.Module
             set
             {
                 SetPropertyValue("Price", ref price, value);
+                if (SoH != null && !IsLoading)
+                {
+                    SoH.UpdateTotal();
+                }
             }
         }
 
         private Decimal quantity;
+        [ImmediatePostData]
         public Decimal Quantity
         {
             get
@@ -242,10 +290,15 @@ namespace AIR_ERP.Module
             set
             {
                 SetPropertyValue("Quantity", ref quantity, value);
+                if (SoH != null && !IsLoading)
+                {
+                    SoH.UpdateTotal();
+                }
             }
         }
 
         private Decimal discount;
+        [ImmediatePostData]
         public Decimal Discount
         {
             get
@@ -255,10 +308,15 @@ namespace AIR_ERP.Module
             set
             {
                 SetPropertyValue("Discount", ref discount, value);
+                if (SoH != null && !IsLoading)
+                {
+                    SoH.UpdateTotal();
+                }
             }
         }
 
         private Decimal discountRate;
+        [ImmediatePostData]
         public Decimal DiscountRate
         {
             get
@@ -295,6 +353,7 @@ namespace AIR_ERP.Module
 
     [DefaultClassOptions]
     [NavigationItem(false)]
+    [CreatableItem(false)]
     [RuleCriteria("RuleSOOtherQuantity", DefaultContexts.Save, "Quantity != 0", "Quantity shouldn't be 0", SkipNullOrEmptyValues = false)]
     [RuleCriteria("RuleSOOtherPrice", DefaultContexts.Save, "Price != 0", "Price shouldn't be 0", SkipNullOrEmptyValues = false)]
     public class SOOther : BaseObject
@@ -314,6 +373,7 @@ namespace AIR_ERP.Module
         }
 
         private Decimal price;
+        [ImmediatePostData]
         public Decimal Price
         {
             get
@@ -323,10 +383,15 @@ namespace AIR_ERP.Module
             set
             {
                 SetPropertyValue("Price", ref price, value);
+                if (SoH != null && !IsLoading)
+                {
+                    SoH.UpdateTotal();
+                }
             }
         }
 
         private Decimal quantity;
+        [ImmediatePostData]
         public Decimal Quantity
         {
             get
@@ -336,6 +401,10 @@ namespace AIR_ERP.Module
             set
             {
                 SetPropertyValue("Quantity", ref quantity, value);
+                if (SoH != null && !IsLoading)
+                {
+                    SoH.UpdateTotal();
+                }
             }
         }
 
@@ -520,6 +589,45 @@ namespace AIR_ERP.Module
             }
         }
 
+        [Persistent("TotalAmount")]
+        private decimal _TotalAmount = 0m;
+        [PersistentAlias("DRItem[].Sum(Price * Quantity)")]
+        public decimal TotalAmount
+        {
+            get
+            {
+                return _TotalAmount;
+            }
+        }
+
+        public void UpdateTotal()
+        {
+            _TotalAmount = 0m;
+            foreach (DRItems drItem in DRItem)
+            {
+                _TotalAmount += drItem.Price * drItem.Quantity - drItem.Discount;
+            }
+            foreach (DROther drOther in DROthers)
+            {
+                _TotalAmount += drOther.Price * drOther.Quantity;
+            }
+            OnChanged("TotalAmount");
+        }
+
+        protected override XPCollection<T> CreateCollection<T>(DevExpress.Xpo.Metadata.XPMemberInfo property)
+        {
+            XPCollection<T> coll = base.CreateCollection<T>(property);
+            if (property.Name == "DRItem" || property.Name == "DROthers")
+            {
+                coll.CollectionChanged += new XPCollectionChangedEventHandler(coll_CollectionChanged);
+            }
+            return coll;
+        }
+        void coll_CollectionChanged(object sender, XPCollectionChangedEventArgs e)
+        {
+            UpdateTotal();
+        }
+
         [Association("DRHeader-DRItem"), Aggregated]
         public XPCollection<DRItems> DRItem
         {
@@ -554,6 +662,7 @@ namespace AIR_ERP.Module
 
     [DefaultClassOptions]
     [NavigationItem(false)]
+    [CreatableItem(false)]
     [RuleCriteria("RuleDRItemsQuantity", DefaultContexts.Save, "Quantity != 0", "Quantity shouldn't be 0", SkipNullOrEmptyValues = false)]
     [RuleCriteria("RuleDRItemsPrice", DefaultContexts.Save, "Price != 0", "Price shouldn't be 0", SkipNullOrEmptyValues = false)]
     public class DRItems : BaseObject
@@ -619,6 +728,10 @@ namespace AIR_ERP.Module
             set
             {
                 SetPropertyValue("Price", ref price, value);
+                if (DoH != null && !IsLoading)
+                {
+                    DoH.UpdateTotal();
+                }
             }
         }
 
@@ -632,6 +745,10 @@ namespace AIR_ERP.Module
             set
             {
                 SetPropertyValue("Quantity", ref quantity, value);
+                if (DoH != null && !IsLoading)
+                {
+                    DoH.UpdateTotal();
+                }
             }
         }
 
@@ -645,6 +762,10 @@ namespace AIR_ERP.Module
             set
             {
                 SetPropertyValue("Discount", ref discount, value);
+                if (DoH != null && !IsLoading)
+                {
+                    DoH.UpdateTotal();
+                }
             }
         }
 
@@ -685,6 +806,7 @@ namespace AIR_ERP.Module
 
     [DefaultClassOptions]
     [NavigationItem(false)]
+    [CreatableItem(false)]
     [RuleCriteria("RuleDROtherQuantity", DefaultContexts.Save, "Quantity != 0", "Quantity shouldn't be 0", SkipNullOrEmptyValues = false)]
     [RuleCriteria("RuleDROtherPrice", DefaultContexts.Save, "Price != 0", "Price shouldn't be 0", SkipNullOrEmptyValues = false)]
     public class DROther : BaseObject
@@ -713,6 +835,10 @@ namespace AIR_ERP.Module
             set
             {
                 SetPropertyValue("Price", ref price, value);
+                if (DoH != null && !IsLoading)
+                {
+                    DoH.UpdateTotal();
+                }
             }
         }
 
@@ -726,6 +852,10 @@ namespace AIR_ERP.Module
             set
             {
                 SetPropertyValue("Quantity", ref quantity, value);
+                if (DoH != null && !IsLoading)
+                {
+                    DoH.UpdateTotal();
+                }
             }
         }
 
@@ -883,14 +1013,49 @@ namespace AIR_ERP.Module
             }
         }
 
-        //[Association("ARVHeader-ARVOthers"), Aggregated]
-        //public XPCollection<ARVOther> ARVOthers
-        //{
-        //    get
-        //    {
-        //        return GetCollection<ARVOther>("ARVOthers");
-        //    }
-        //}
+        [Persistent("TotalAmount")]
+        private decimal _TotalAmount = 0m;
+        [PersistentAlias("ARVOther[].Sum(Price * Quantity)")]
+        public decimal TotalAmount
+        {
+            get
+            {
+                return _TotalAmount;
+            }
+        }
+
+        public void UpdateTotal()
+        {
+            _TotalAmount = 0m;
+            foreach (ARVOther arOther in ARVOthers)
+            {
+                _TotalAmount += arOther.Price * arOther.Quantity;
+            }
+            OnChanged("TotalAmount");
+        }
+
+        protected override XPCollection<T> CreateCollection<T>(DevExpress.Xpo.Metadata.XPMemberInfo property)
+        {
+            XPCollection<T> coll = base.CreateCollection<T>(property);
+            if (property.Name == "ARVOthers")
+            {
+                coll.CollectionChanged += new XPCollectionChangedEventHandler(coll_CollectionChanged);
+            }
+            return coll;
+        }
+        void coll_CollectionChanged(object sender, XPCollectionChangedEventArgs e)
+        {
+            UpdateTotal();
+        }
+
+        [Association("ARVHeader-ARVOthers"), Aggregated]
+        public XPCollection<ARVOther> ARVOthers
+        {
+            get
+            {
+                return GetCollection<ARVOther>("ARVOthers");
+            }
+        }
 
         private XPCollection<AuditDataItemPersistent> auditTrail;
         public XPCollection<AuditDataItemPersistent> AuditTrail
@@ -906,4 +1071,93 @@ namespace AIR_ERP.Module
         }
     }
 
+    [DefaultClassOptions]
+    [NavigationItem(false)]
+    [CreatableItem(false)]
+    [RuleCriteria("RuleARVOtherQuantity", DefaultContexts.Save, "Quantity != 0", "Quantity shouldn't be 0", SkipNullOrEmptyValues = false)]
+    [RuleCriteria("RuleARVOtherPrice", DefaultContexts.Save, "Price != 0", "Price shouldn't be 0", SkipNullOrEmptyValues = false)]
+    public class ARVOther : BaseObject
+    {
+        public ARVOther(Session session) : base(session) { }
+
+        private ChartOfAccounts accountId;
+        [RuleRequiredField("RuleRequiredField for ARVOther.AccountId", DefaultContexts.Save)]
+        [DataSourceCriteria("IsActive = True")]
+        public ChartOfAccounts AccountId
+        {
+            get { return accountId; }
+            set
+            {
+                SetPropertyValue("AccountId", ref accountId, value);
+            }
+        }
+
+        private Decimal price;
+        public Decimal Price
+        {
+            get
+            {
+                return price;
+            }
+            set
+            {
+                SetPropertyValue("Price", ref price, value);
+                if (AoH != null && !IsLoading)
+                {
+                    AoH.UpdateTotal();
+                }
+            }
+        }
+
+        private Decimal quantity;
+        public Decimal Quantity
+        {
+            get
+            {
+                return quantity;
+            }
+            set
+            {
+                SetPropertyValue("Quantity", ref quantity, value);
+                if (AoH != null && !IsLoading)
+                {
+                    AoH.UpdateTotal();
+                }
+            }
+        }
+
+        private String remarks;
+        public string Remarks
+        {
+            get
+            {
+                return remarks;
+            }
+            set
+            {
+                SetPropertyValue("Remarks", ref remarks, value);
+            }
+        }
+
+        private ARVHeader AoH;
+        [Association("ARVHeader-ARVOthers")]
+        public ARVHeader ARVHeader
+        {
+            get { return AoH; }
+            set { SetPropertyValue("ARVHeader", ref AoH, value); }
+        }
+
+        private XPCollection<AuditDataItemPersistent> auditTrail;
+        public XPCollection<AuditDataItemPersistent> AuditTrail
+        {
+            get
+            {
+                if (auditTrail == null)
+                {
+                    auditTrail = AuditedObjectWeakReference.GetAuditTrail(Session, this);
+                }
+                return auditTrail;
+            }
+        }
+    }
 }

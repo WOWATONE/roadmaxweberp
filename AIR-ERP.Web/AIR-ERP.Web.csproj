@@ -444,7 +444,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>2064</DevelopmentServerPort>
+          <DevelopmentServerPort>1129</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost/AIR-ERP</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
