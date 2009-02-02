@@ -23,18 +23,41 @@
 	</BOModel>
 	<Views>
 		<DetailView ID="MyLogonParameters_DetailView" Caption="Please Login">
-			<Layout Width="427" Height="586">
+			<Items>
+				<StaticImage ID="Logo" ImageName="ExpressAppLogo" IsNewNode="True" />
+			</Items>
+			<Layout Width="414" Height="586">
 				<LayoutGroup ID="Main" CaptionLocation="Default" RelativeSize="97">
 					<LayoutGroup ID="SimpleEditors" CaptionLocation="Default" RelativeSize="100">
 						<LayoutGroup ID="MyLogonParameters" CaptionLocation="Default" RelativeSize="100">
-							<LayoutItem ID="Employee" RelativeSize="4" SizeConstraintsType="Default" />
-							<LayoutItem ID="Password" Index="2" RelativeSize="91" SizeConstraintsType="Default" />
-							<LayoutItem ID="Company" Index="0" RelativeSize="4" SizeConstraintsType="Default" />
+							<LayoutItem ID="Branch" Removed="True" />
+							<LayoutItem ID="Company" Removed="True" />
+							<LayoutItem ID="Password" Removed="True" />
+							<LayoutItem ID="Employee" Removed="True" />
+							<LayoutItem ID="Item3" ShowCaption="False" CaptionLocation="Default" Index="1" RelativeSize="76" SizeConstraintsType="Default" IsNewNode="True" />
+							<LayoutGroup ID="4fbb1cb7-2507-410f-a8bc-86663cfda33b" ShowCaption="False" Caption="4fbb1cb7-2507-410f-a8bc-86663cfda33b(4)" CaptionLocation="Default" Direction="Horizontal" Index="0" RelativeSize="23" IsNewNode="True">
+								<LayoutGroup ID="364c53e7-c95b-4063-9e3c-6f6167fe3513" ShowCaption="False" Caption="364c53e7-c95b-4063-9e3c-6f6167fe3513(6)" CaptionLocation="Default" Direction="Vertical" Index="1" RelativeSize="71" IsNewNode="True">
+									<LayoutItem ID="Company" ShowCaption="True" CaptionLocation="Default" Index="1" RelativeSize="20" SizeConstraintsType="Default" IsNewNode="True" />
+									<LayoutItem ID="Branch" ShowCaption="True" CaptionLocation="Default" Index="2" RelativeSize="20" SizeConstraintsType="Default" IsNewNode="True" />
+									<LayoutItem ID="Employee" ShowCaption="True" CaptionLocation="Default" Index="3" RelativeSize="20" SizeConstraintsType="Default" IsNewNode="True" />
+									<LayoutItem ID="Password" ShowCaption="True" CaptionLocation="Default" Index="4" RelativeSize="20" SizeConstraintsType="Default" IsNewNode="True" />
+									<LayoutItem ID="Logo" ShowCaption="False" CaptionLocation="Default" Index="0" RelativeSize="20" SizeConstraintsType="Default" IsNewNode="True" />
+								</LayoutGroup>
+								<LayoutGroup ID="7e3cfef4-0478-40ee-815a-6b38f92fbecf" ShowCaption="False" Caption="7e3cfef4-0478-40ee-815a-6b38f92fbecf(5)" CaptionLocation="Default" Direction="Vertical" Index="0" RelativeSize="28" IsNewNode="True">
+									<LayoutItem ID="Item2" ShowCaption="False" CaptionLocation="Default" Index="0" RelativeSize="100" SizeConstraintsType="Default" IsNewNode="True" />
+								</LayoutGroup>
+							</LayoutGroup>
 						</LayoutGroup>
 					</LayoutGroup>
 				</LayoutGroup>
 			</Layout>
 		</DetailView>
+		<ListView ID="AuditDataItemPersistent_ListView">
+			<Columns>
+				<ColumnInfo PropertyName="OldValue" Index="4" />
+				<ColumnInfo PropertyName="NewValue" Index="5" />
+			</Columns>
+		</ListView>
 		<ListView ID="BusinessPartner_ListView">
 			<Columns>
 				<ColumnInfo PropertyName="Term" DataSourceCriteria="" />
@@ -58,33 +81,33 @@
 			<Items>
 				<PropertyEditor PropertyName="BusinessPartner" ImmediatePostData="True" />
 			</Items>
-			<Layout Width="472" Height="586">
+			<Layout Width="549" Height="586">
 				<LayoutGroup ID="Main" CaptionLocation="Default" RelativeSize="97">
-					<LayoutGroup ID="SimpleEditors" CaptionLocation="Default" RelativeSize="31">
-						<LayoutGroup ID="SOHeader" Caption="Sales Order Header" CaptionLocation="Default" RelativeSize="93">
-							<LayoutGroup ID="SOHeader_col1" CaptionLocation="Default" RelativeSize="49">
-								<LayoutItem ID="Currency" Removed="True" />
-								<LayoutItem ID="Term" Removed="True" />
-								<LayoutItem ID="VatCategory" Removed="True" />
-								<LayoutItem ID="Branch" Index="1" RelativeSize="20" SizeConstraintsType="Default" />
-								<LayoutItem ID="Company" Index="0" RelativeSize="20" SizeConstraintsType="Default" />
-								<LayoutItem ID="DocNum" ShowCaption="True" CaptionLocation="Default" Index="2" RelativeSize="20" SizeConstraintsType="Default" IsNewNode="True" />
-								<LayoutItem ID="DocDate" ShowCaption="True" CaptionLocation="Default" Index="3" RelativeSize="20" SizeConstraintsType="Default" IsNewNode="True" />
-								<LayoutItem ID="BusinessPartner" ShowCaption="True" CaptionLocation="Default" Index="4" RelativeSize="20" SizeConstraintsType="Default" IsNewNode="True" />
+					<LayoutGroup ID="SimpleEditors" CaptionLocation="Default" RelativeSize="30">
+						<LayoutGroup ID="SOHeader" Removed="True" />
+						<LayoutGroup ID="Item1" ShowCaption="False" Caption="Item1" CaptionLocation="Top" Direction="Vertical" Index="1" RelativeSize="28" IsNewNode="True">
+							<LayoutItem ID="BusinessPartner" ShowCaption="True" CaptionLocation="Default" Index="0" RelativeSize="50" SizeConstraintsType="Default" IsNewNode="True" />
+							<LayoutItem ID="Remarks" ShowCaption="True" CaptionLocation="Default" Index="1" RelativeSize="50" SizeConstraintsType="Default" IsNewNode="True" />
+						</LayoutGroup>
+						<LayoutGroup ID="33e5bc68-8969-4ee5-b23c-d7f4ff25ef0e" ShowCaption="False" Caption="33e5bc68-8969-4ee5-b23c-d7f4ff25ef0e(3)" CaptionLocation="Default" Direction="Horizontal" Index="0" RelativeSize="64" IsNewNode="True">
+							<LayoutGroup ID="SOHeader_col1" ShowCaption="False" Caption="SOHeader_col1" CaptionLocation="Default" Direction="Vertical" Index="0" RelativeSize="40" IsNewNode="True">
+								<LayoutItem ID="Company" ShowCaption="True" CaptionLocation="Default" Index="0" RelativeSize="25" SizeConstraintsType="Default" IsNewNode="True" />
+								<LayoutItem ID="Branch" ShowCaption="True" CaptionLocation="Default" Index="1" RelativeSize="25" SizeConstraintsType="Default" IsNewNode="True" />
+								<LayoutItem ID="DocNum" ShowCaption="True" CaptionLocation="Default" Index="2" RelativeSize="25" SizeConstraintsType="Default" IsNewNode="True" />
+								<LayoutItem ID="DocDate" ShowCaption="True" CaptionLocation="Default" Index="3" RelativeSize="25" SizeConstraintsType="Default" IsNewNode="True" />
 							</LayoutGroup>
-							<LayoutGroup ID="SOHeader_col2" CaptionLocation="Default" RelativeSize="49">
-								<LayoutItem ID="DocNum" Removed="True" />
-								<LayoutItem ID="DocDate" Removed="True" />
-								<LayoutItem ID="BusinessPartner" Removed="True" />
-								<LayoutItem ID="Remarks" Index="4" RelativeSize="20" SizeConstraintsType="Default" />
-								<LayoutItem ID="IsActive" Index="2" RelativeSize="20" SizeConstraintsType="Default" />
-								<LayoutItem ID="Currency" ShowCaption="True" CaptionLocation="Default" Index="3" RelativeSize="20" SizeConstraintsType="Default" IsNewNode="True" />
-								<LayoutItem ID="Term" ShowCaption="True" CaptionLocation="Default" Index="0" RelativeSize="20" SizeConstraintsType="Default" IsNewNode="True" />
-								<LayoutItem ID="VatCategory" ShowCaption="True" CaptionLocation="Default" Index="1" RelativeSize="20" SizeConstraintsType="Default" IsNewNode="True" />
+							<LayoutGroup ID="SOHeader_col2" ShowCaption="False" Caption="SOHeader_col2" CaptionLocation="Default" Direction="Vertical" Index="1" RelativeSize="59" IsNewNode="True">
+								<LayoutItem ID="Currency" ShowCaption="True" CaptionLocation="Default" Index="1" RelativeSize="25" SizeConstraintsType="Default" IsNewNode="True" />
+								<LayoutItem ID="VatCategory" ShowCaption="True" CaptionLocation="Default" Index="2" RelativeSize="25" SizeConstraintsType="Default" IsNewNode="True" />
+								<LayoutItem ID="Term" ShowCaption="True" CaptionLocation="Default" Index="3" RelativeSize="25" SizeConstraintsType="Default" IsNewNode="True" />
+								<LayoutGroup ID="8553066b-204c-43f3-81b8-bffc9551d8e3" ShowCaption="False" Caption="" CaptionLocation="" Direction="Horizontal" Index="0" RelativeSize="25" IsNewNode="True">
+									<LayoutItem ID="IsActive" ShowCaption="True" CaptionLocation="Default" Index="0" RelativeSize="50" SizeConstraintsType="Default" IsNewNode="True" />
+									<LayoutItem ID="TotalAmount" ShowCaption="True" CaptionLocation="Default" Index="1" RelativeSize="50" SizeConstraintsType="Default" IsNewNode="True" />
+								</LayoutGroup>
 							</LayoutGroup>
 						</LayoutGroup>
 					</LayoutGroup>
-					<TabbedGroup ID="Tabs" CaptionLocation="Default" RelativeSize="68">
+					<TabbedGroup ID="Tabs" CaptionLocation="Default" RelativeSize="69">
 						<LayoutGroup ID="SOItem" Caption="Item Detail" Direction="Vertical" RelativeSize="100">
 							<LayoutItem ID="SOItem" RelativeSize="100" SizeConstraintsType="Custom" />
 						</LayoutGroup>
@@ -100,19 +123,100 @@
 		</DetailView>
 		<ListView ID="SOHeader_LookupListView">
 			<Columns>
+				<ColumnInfo PropertyName="DocNum" Index="0" />
+			</Columns>
+		</ListView>
+		<DetailView ID="DRHeader_DetailView">
+			<Layout Width="549" Height="586">
+				<LayoutGroup ID="Main" CaptionLocation="Default" RelativeSize="97">
+					<LayoutGroup ID="SimpleEditors" CaptionLocation="Default" RelativeSize="30">
+						<LayoutGroup ID="DRHeader" Removed="True" />
+						<LayoutGroup ID="Item1" ShowCaption="False" Caption="Item1" CaptionLocation="Top" Direction="Vertical" Index="1" RelativeSize="28" IsNewNode="True">
+							<LayoutItem ID="BusinessPartner" ShowCaption="True" CaptionLocation="Default" Index="0" RelativeSize="50" SizeConstraintsType="Default" IsNewNode="True" />
+							<LayoutItem ID="Remarks" ShowCaption="True" CaptionLocation="Default" Index="1" RelativeSize="50" SizeConstraintsType="Default" IsNewNode="True" />
+						</LayoutGroup>
+						<LayoutGroup ID="0285a8d6-7bd4-4ae4-879d-57b7c6c6f3e4" ShowCaption="False" Caption="0285a8d6-7bd4-4ae4-879d-57b7c6c6f3e4(3)" CaptionLocation="Default" Direction="Horizontal" Index="0" RelativeSize="64" IsNewNode="True">
+							<LayoutGroup ID="DRHeader_col1" ShowCaption="False" Caption="DRHeader_col1" CaptionLocation="Default" Direction="Vertical" Index="0" RelativeSize="38" IsNewNode="True">
+								<LayoutItem ID="Branch" ShowCaption="True" CaptionLocation="Default" Index="1" RelativeSize="25" SizeConstraintsType="Default" IsNewNode="True" />
+								<LayoutItem ID="DocNum" ShowCaption="True" CaptionLocation="Default" Index="2" RelativeSize="25" SizeConstraintsType="Default" IsNewNode="True" />
+								<LayoutItem ID="DocDate" ShowCaption="True" CaptionLocation="Default" Index="3" RelativeSize="25" SizeConstraintsType="Default" IsNewNode="True" />
+								<LayoutItem ID="Company" ShowCaption="True" CaptionLocation="Default" Index="0" RelativeSize="25" SizeConstraintsType="Default" IsNewNode="True" />
+							</LayoutGroup>
+							<LayoutGroup ID="DRHeader_col2" ShowCaption="False" Caption="DRHeader_col2" CaptionLocation="Default" Direction="Vertical" Index="1" RelativeSize="61" IsNewNode="True">
+								<LayoutItem ID="Currency" ShowCaption="True" CaptionLocation="Default" Index="1" RelativeSize="25" SizeConstraintsType="Default" IsNewNode="True" />
+								<LayoutItem ID="VatCategory" ShowCaption="True" CaptionLocation="Default" Index="2" RelativeSize="25" SizeConstraintsType="Default" IsNewNode="True" />
+								<LayoutItem ID="Term" ShowCaption="True" CaptionLocation="Default" Index="3" RelativeSize="25" SizeConstraintsType="Default" IsNewNode="True" />
+								<LayoutGroup ID="f0fd8583-da8d-42bc-9013-a5afa2dcda61" ShowCaption="False" Caption="" CaptionLocation="" Direction="Horizontal" Index="0" RelativeSize="25" IsNewNode="True">
+									<LayoutItem ID="IsActive" ShowCaption="True" CaptionLocation="Default" Index="0" RelativeSize="50" SizeConstraintsType="Default" IsNewNode="True" />
+									<LayoutItem ID="TotalAmount" ShowCaption="True" CaptionLocation="Default" Index="1" RelativeSize="50" SizeConstraintsType="Default" IsNewNode="True" />
+								</LayoutGroup>
+							</LayoutGroup>
+						</LayoutGroup>
+					</LayoutGroup>
+					<TabbedGroup ID="Tabs" CaptionLocation="Default" RelativeSize="69">
+						<LayoutGroup ID="DRItem" Caption="Item Details" Direction="Vertical" RelativeSize="100">
+							<LayoutItem ID="DRItem" RelativeSize="100" SizeConstraintsType="Custom" />
+						</LayoutGroup>
+						<LayoutGroup ID="DROthers" Caption="Other Charges" Direction="Vertical" RelativeSize="100">
+							<LayoutItem ID="DROthers" RelativeSize="100" SizeConstraintsType="Custom" />
+						</LayoutGroup>
+						<LayoutGroup ID="AuditTrail" Direction="Vertical" RelativeSize="100">
+							<LayoutItem ID="AuditTrail" RelativeSize="100" SizeConstraintsType="Custom" />
+						</LayoutGroup>
+					</TabbedGroup>
+				</LayoutGroup>
+			</Layout>
+		</DetailView>
+		<ListView ID="ARVHeader_ListView" Caption="Accounts Receivible Voucher">
+			<Columns>
 				<ColumnInfo PropertyName="Currency" Index="-1" />
 				<ColumnInfo PropertyName="Company" Index="-1" />
 				<ColumnInfo PropertyName="Branch" Index="-1" />
-				<ColumnInfo PropertyName="VatCategory" Index="-1" />
-				<ColumnInfo PropertyName="Term" Index="-1" />
+				<ColumnInfo PropertyName="Term" Index="3" />
 				<ColumnInfo PropertyName="BusinessPartner" Index="2" />
-				<ColumnInfo PropertyName="DocNum" Index="0" />
 				<ColumnInfo PropertyName="DocDate" Index="1" />
-				<ColumnInfo PropertyName="Remarks" Index="-1" />
-				<ColumnInfo PropertyName="IsActive" Index="-1" />
+				<ColumnInfo PropertyName="Remarks" Index="4" />
 			</Columns>
 		</ListView>
-		<ListView ID="SOHeader_SOItem_ListView">
+		<DetailView ID="ARVHeader_DetailView">
+			<Layout Width="414" Height="586">
+				<LayoutGroup ID="Main" CaptionLocation="Default" RelativeSize="97">
+					<LayoutGroup ID="SimpleEditors" Caption="SimpleEditors(2)" CaptionLocation="Default" RelativeSize="30">
+						<LayoutGroup ID="ARVHeader" Removed="True" />
+						<LayoutGroup ID="Item1" ShowCaption="False" Caption="Item1" CaptionLocation="Top" Direction="Vertical" Index="1" RelativeSize="28" IsNewNode="True">
+							<LayoutItem ID="Remarks" ShowCaption="True" CaptionLocation="Default" Index="1" RelativeSize="50" SizeConstraintsType="Default" IsNewNode="True" />
+							<LayoutItem ID="BusinessPartner" ShowCaption="True" CaptionLocation="Default" Index="0" RelativeSize="50" SizeConstraintsType="Default" IsNewNode="True" />
+						</LayoutGroup>
+						<LayoutGroup ID="6f329411-b07b-41e0-af0a-ff0f874e2c01" ShowCaption="False" Caption="6f329411-b07b-41e0-af0a-ff0f874e2c01(3)" CaptionLocation="Default" Direction="Horizontal" Index="0" RelativeSize="64" IsNewNode="True">
+							<LayoutGroup ID="ARVHeader_col1" ShowCaption="False" Caption="ARVHeader_col1" CaptionLocation="Default" Direction="Vertical" Index="0" RelativeSize="33" IsNewNode="True">
+								<LayoutItem ID="Company" ShowCaption="True" CaptionLocation="Default" Index="0" RelativeSize="25" SizeConstraintsType="Default" IsNewNode="True" />
+								<LayoutItem ID="Branch" ShowCaption="True" CaptionLocation="Default" Index="1" RelativeSize="25" SizeConstraintsType="Default" IsNewNode="True" />
+								<LayoutItem ID="DocNum" ShowCaption="True" CaptionLocation="Default" Index="2" RelativeSize="25" SizeConstraintsType="Default" IsNewNode="True" />
+								<LayoutItem ID="DocDate" ShowCaption="True" CaptionLocation="Default" Index="3" RelativeSize="25" SizeConstraintsType="Default" IsNewNode="True" />
+							</LayoutGroup>
+							<LayoutGroup ID="ARVHeader_col2" ShowCaption="False" Caption="ARVHeader_col2" CaptionLocation="Default" Direction="Vertical" Index="1" RelativeSize="66" IsNewNode="True">
+								<LayoutItem ID="Currency" ShowCaption="True" CaptionLocation="Default" Index="1" RelativeSize="25" SizeConstraintsType="Default" IsNewNode="True" />
+								<LayoutItem ID="VatCategory" ShowCaption="True" CaptionLocation="Default" Index="2" RelativeSize="25" SizeConstraintsType="Default" IsNewNode="True" />
+								<LayoutItem ID="Term" ShowCaption="True" CaptionLocation="Default" Index="3" RelativeSize="25" SizeConstraintsType="Default" IsNewNode="True" />
+								<LayoutGroup ID="883012ad-d8cf-4b41-ac1c-382a76aec1b3" ShowCaption="False" Caption="" CaptionLocation="" Direction="Horizontal" Index="0" RelativeSize="25" IsNewNode="True">
+									<LayoutItem ID="IsActive" ShowCaption="True" CaptionLocation="Default" Index="0" RelativeSize="50" SizeConstraintsType="Default" IsNewNode="True" />
+									<LayoutItem ID="TotalAmount" ShowCaption="True" CaptionLocation="Default" Index="1" RelativeSize="50" SizeConstraintsType="Default" IsNewNode="True" />
+								</LayoutGroup>
+							</LayoutGroup>
+						</LayoutGroup>
+					</LayoutGroup>
+					<TabbedGroup ID="Tabs" CaptionLocation="Default" RelativeSize="69">
+						<LayoutGroup ID="ARVOthers" Direction="Vertical" RelativeSize="100">
+							<LayoutItem ID="ARVOthers" RelativeSize="100" SizeConstraintsType="Custom" />
+						</LayoutGroup>
+						<LayoutGroup ID="AuditTrail" Direction="Vertical" RelativeSize="100">
+							<LayoutItem ID="AuditTrail" RelativeSize="100" SizeConstraintsType="Custom" />
+						</LayoutGroup>
+					</TabbedGroup>
+				</LayoutGroup>
+			</Layout>
+		</DetailView>
+		<ListView ID="SOHeader_SOItem_ListView" EditMode="Editable">
 			<Columns>
 				<ColumnInfo PropertyName="Cost" Index="-1" />
 				<ColumnInfo PropertyName="Quantity" Index="3" />
@@ -140,6 +244,9 @@
 			<Item ID="ItemMaster_ListView" Index="11" />
 			<Item ID="ItemConversion_ListView" Visible="False" Index="10" />
 			<Item ID="Warehouse_ListView" Index="17" />
+		</Group>
+		<Group ID="Accounts Receivable">
+			<Item ID="DRHeader_ListView" Caption="Delivery Receipt" />
 		</Group>
 	</NavigationItems>
 	<SchemaModules IsNewNode="True">
