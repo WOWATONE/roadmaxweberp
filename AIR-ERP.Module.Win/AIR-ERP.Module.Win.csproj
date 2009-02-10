@@ -33,6 +33,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DevExpress.ExpressApp.Printing.Win.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\WINDOWS\assembly\GAC_MSIL\DevExpress.ExpressApp.Printing.Win.v8.3\8.3.2.5087__b88d1754d700e49a\DevExpress.ExpressApp.Printing.Win.v8.3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Reports.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.ExpressApp.Reports.Win.v8.3, Version=8.3.2.5087, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\WINDOWS\assembly\GAC_MSIL\DevExpress.ExpressApp.Reports.Win.v8.3\8.3.2.5087__b88d1754d700e49a\DevExpress.ExpressApp.Reports.Win.v8.3.dll</HintPath>
+    </Reference>
     <Reference Include="DevExpress.Utils.v8.3">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
@@ -88,6 +97,7 @@
     <Reference Include="DevExpress.XtraCharts.v8.3">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
+    <Reference Include="DevExpress.XtraReports.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraRichEdit.v8.3">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
@@ -116,6 +126,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PrintOutViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PrintOutViewController.Designer.cs">
+      <DependentUpon>PrintOutViewController.cs</DependentUpon>
+    </Compile>
     <Compile Include="WinModule.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -127,6 +143,9 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Model.DesignedDiffs.xafml" />
+    <EmbeddedResource Include="PrintOutViewController.resx">
+      <DependentUpon>PrintOutViewController.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WinModule.resx">
       <DependentUpon>WinModule.cs</DependentUpon>
       <SubType>Designer</SubType>

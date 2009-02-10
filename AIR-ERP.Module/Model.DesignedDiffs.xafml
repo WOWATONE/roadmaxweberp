@@ -19,7 +19,9 @@
 		<Class Name="AIR_ERP.Module.UnitOfMeasure" ImageName="Folder_share" />
 		<Class Name="AIR_ERP.Module.ItemMaster" DefaultListViewImage="Card" ImageName="Card" />
 		<Class Name="AIR_ERP.Module.Warehouse" DefaultListViewImage="Home" ImageName="Home" />
-		<Class Name="AIR_ERP.Module.SOHeader" Caption="Sales Order" ImageName="Shopping" DefaultListViewImage="Shopping" />
+		<Class Name="AIR_ERP.Module.SOHeader" Caption="Sales Order" ImageName="Shopping" DefaultListViewImage="Shopping">
+			<Member Name="DocNum" DisplayFormat="D8" />
+		</Class>
 	</BOModel>
 	<Views>
 		<DetailView ID="MyLogonParameters_DetailView" Caption="Please Login">

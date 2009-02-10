@@ -21,6 +21,11 @@
 				<ColumnInfo PropertyName="Description" Index="0" />
 			</Columns>
 		</ListView>
+		<ListView ID="BusinessPartnerType_LookupListView">
+			<Columns>
+				<ColumnInfo PropertyName="Description" Index="0" />
+			</Columns>
+		</ListView>
 		<ListView ID="BusinessPartner_LookupListView">
 			<Columns>
 				<ColumnInfo PropertyName="BusinessPartnerName" Index="0" />
@@ -53,8 +58,14 @@
 		</ListView>
 		<ListView ID="SOHeader_ListView">
 			<Columns>
-				<ColumnInfo PropertyName="Remarks" Index="4" />
-				<ColumnInfo PropertyName="TotalAmount" Index="7" />
+				<ColumnInfo PropertyName="Branch" Width="170" />
+				<ColumnInfo PropertyName="Term" Width="170" />
+				<ColumnInfo PropertyName="BusinessPartner" Width="170" />
+				<ColumnInfo PropertyName="DocNum" Width="85" />
+				<ColumnInfo PropertyName="DocDate" Width="91" />
+				<ColumnInfo PropertyName="Remarks" Index="4" Width="170" />
+				<ColumnInfo PropertyName="IsActive" Width="122" />
+				<ColumnInfo PropertyName="TotalAmount" Index="7" Width="135" />
 			</Columns>
 		</ListView>
 		<DetailView ID="SOHeader_DetailView">
@@ -189,6 +200,13 @@
 				</LayoutGroup>
 			</Layout>
 		</DetailView>
+		<ListView ID="ReportData_ListView">
+			<Columns>
+				<ColumnInfo PropertyName="ReportName" Index="0" Width="308" />
+				<ColumnInfo PropertyName="DataTypeCaption" Index="1" Width="348" />
+				<ColumnInfo PropertyName="Oid" Index="2" Width="457" />
+			</Columns>
+		</ListView>
 		<ListView ID="Party_PhoneNumbers_ListView">
 			<Columns>
 				<ColumnInfo PropertyName="PhoneType" Index="1" />
@@ -229,17 +247,19 @@
 		<SearchController SelectedNodes="Element[@Name='Application']\Element[@Name='Options'];Element[@Name='Application']\Element[@Name='Options']\Element[@Name='LayoutManagerOptions'];Element[@Name='Application']\Element[@Name='Options']\Element[@Name='ListViewShortcuts'];Element[@Name='Application']\Element[@Name='Localization'];Element[@Name='Application']\Element[@Name='Localization']\Element[@Name='LocalizationGroup'];Element[@Name='Application']\Element[@Name='Localization']\Element[@Name='LocalizationGroup']\Element[@Name='LocalizationItem'];Element[@Name='Application']\Element[@Name='BOModel'];Element[@Name='Application']\Element[@Name='BOModel']\Element[@Name='Class'];Element[@Name='Application']\Element[@Name='BOModel']\Element[@Name='Class']\Element[@Name='Interfaces'];Element[@Name='Application']\Element[@Name='BOModel']\Element[@Name='Class']\Element[@Name='Interfaces']\Element[@Name='Interface'];Element[@Name='Application']\Element[@Name='BOModel']\Element[@Name='Class']\Element[@Name='Member'];Element[@Name='Application']\Element[@Name='ImageSources'];Element[@Name='Application']\Element[@Name='ImageSources']\Element[@Name='FileImageSource'];Element[@Name='Application']\Element[@Name='ImageSources']\Element[@Name='AssemblyResourceImageSource'];Element[@Name='Application']\Element[@Name='ActionDesign'];Element[@Name='Application']\Element[@Name='ActionDesign']\Element[@Name='Actions'];Element[@Name='Application']\Element[@Name='ActionDesign']\Element[@Name='Actions']\Element[@Name='Action'];Element[@Name='Application']\Element[@Name='ActionDesign']\Element[@Name='Controllers'];Element[@Name='Application']\Element[@Name='ActionDesign']\Element[@Name='Controllers']\Element[@Name='Controller'];Element[@Name='Application']\Element[@Name='ActionDesign']\Element[@Name='Controllers']\Element[@Name='ViewController'];Element[@Name='Application']\Element[@Name='ActionDesign']\Element[@Name='Controllers']\Element[@Name='WindowController'];Element[@Name='Application']\Element[@Name='ActionDesign']\Element[@Name='ActionRef'];Element[@Name='Application']\Element[@Name='ActionDesign']\Element[@Name='DisableReasons'];Element[@Name='Application']\Element[@Name='ActionDesign']\Element[@Name='DisableReasons']\Element[@Name='Reason'];Element[@Name='Application']\Element[@Name='ActionDesign']\Element[@Name='ActionToContainerMapping'];Element[@Name='Application']\Element[@Name='ActionDesign']\Element[@Name='ActionToContainerMapping']\Element[@Name='ActionContainer'];Element[@Name='Application']\Element[@Name='ActionDesign']\Element[@Name='ActionToContainerMapping']\Element[@Name='ActionContainer']\Element[@Name='ActionLink'];Element[@Name='Application']\Element[@Name='Views'];Element[@Name='Application']\Element[@Name='Views']\Element[@Name='ListView'];Element[@Name='Application']\Element[@Name='Views']\Element[@Name='ListView']\Element[@Name='Columns'];Element[@Name='Application']\Element[@Name='Views']\Element[@Name='ListView']\Element[@Name='Columns']\Element[@Name='ColumnInfo'];Element[@Name='Application']\Element[@Name='Views']\Element[@Name='ListView']\Element[@Name='SplitLayout'];Element[@Name='Application']\Element[@Name='Views']\Element[@Name='ListView']\Element[@Name='HiddenActions'];Element[@Name='Application']\Element[@Name='Views']\Element[@Name='ListView']\Element[@Name='Filters'];Element[@Name='Application']\Element[@Name='Views']\Element[@Name='ListView']\Element[@Name='Filters']\Element[@Name='Filter'];Element[@Name='Application']\Element[@Name='Views']\Element[@Name='DetailView'];Element[@Name='Application']\Element[@Name='Views']\Element[@Name='DetailView']\Element[@Name='Items'];Element[@Name='Application']\Element[@Name='Views']\Element[@Name='DetailView']\Element[@Name='Items']\Element[@Name='StaticText'];Element[@Name='Application']\Element[@Name='Views']\Element[@Name='DetailView']\Element[@Name='Items']\Element[@Name='StaticImage'];Element[@Name='Application']\Element[@Name='Views']\Element[@Name='DetailView']\Element[@Name='Items']\Element[@Name='PropertyEditor'];Element[@Name='Application']\Element[@Name='Views']\Element[@Name='DetailView']\Element[@Name='Items']\Element[@Name='ControlDetailItem'];Element[@Name='Application']\Element[@Name='Views']\Element[@Name='DetailView']\Element[@Name='Layout'];Element[@Name='Application']\Element[@Name='Views']\Element[@Name='DetailView']\Element[@Name='Layout']\Element[@Name='LayoutGroup'];Element[@Name='Application']\Element[@Name='Views']\Element[@Name='DetailView']\Element[@Name='Layout']\Element[@Name='TabbedGroup'];Element[@Name='Application']\Element[@Name='Views']\Element[@Name='DetailView']\Element[@Name='Layout']\Element[@Name='LayoutItem'];Element[@Name='Application']\Element[@Name='Views']\Element[@Name='DetailView']\Element[@Name='Layout']\Element[@Name='SplitterItem'];Element[@Name='Application']\Element[@Name='Views']\Element[@Name='DetailView']\Element[@Name='Layout']\Element[@Name='LabelItem'];Element[@Name='Application']\Element[@Name='DetailViewItems'];Element[@Name='Application']\Element[@Name='DetailViewItems']\Element[@Name='StaticText'];Element[@Name='Application']\Element[@Name='DetailViewItems']\Element[@Name='StaticImage'];Element[@Name='Application']\Element[@Name='DetailViewItems']\Element[@Name='PropertyEditor'];Element[@Name='Application']\Element[@Name='DetailViewItems']\Element[@Name='PropertyEditor']\Element[@Name='DefaultEditor'];Element[@Name='Application']\Element[@Name='DetailViewItems']\Element[@Name='ControlDetailItem'];Element[@Name='Application']\Element[@Name='Validation'];Element[@Name='Application']\Element[@Name='Validation']\Element[@Name='Rules'];Element[@Name='Application']\Element[@Name='Validation']\Element[@Name='Rules']\Element[@Name='RuleObjectExists'];Element[@Name='Application']\Element[@Name='Validation']\Element[@Name='Rules']\Element[@Name='RuleUniqueValue'];Element[@Name='Application']\Element[@Name='Validation']\Element[@Name='Rules']\Element[@Name='RuleIsReferenced'];Element[@Name='Application']\Element[@Name='Validation']\Element[@Name='Rules']\Element[@Name='RuleRequiredField'];Element[@Name='Application']\Element[@Name='Validation']\Element[@Name='Rules']\Element[@Name='RuleFromBoolProperty'];Element[@Name='Application']\Element[@Name='Validation']\Element[@Name='Rules']\Element[@Name='RuleValueComparison'];Element[@Name='Application']\Element[@Name='Validation']\Element[@Name='Rules']\Element[@Name='RuleRange'];Element[@Name='Application']\Element[@Name='Validation']\Element[@Name='Rules']\Element[@Name='RuleStringComparison'];Element[@Name='Application']\Element[@Name='Validation']\Element[@Name='Rules']\Element[@Name='RuleRegularExpression'];Element[@Name='Application']\Element[@Name='Validation']\Element[@Name='Rules']\Element[@Name='RuleCriteria'];Element[@Name='Application']\Element[@Name='Validation']\Element[@Name='Contexts'];Element[@Name='Application']\Element[@Name='Validation']\Element[@Name='Contexts']\Element[@Name='Context'];Element[@Name='Application']\Element[@Name='Validation']\Element[@Name='ErrorMessageTemplates'];Element[@Name='Application']\Element[@Name='Validation']\Element[@Name='ErrorMessageTemplates']\Element[@Name='RuleObjectExists'];Element[@Name='Application']\Element[@Name='Validation']\Element[@Name='ErrorMessageTemplates']\Element[@Name='RuleUniqueValue'];Element[@Name='Application']\Element[@Name='Validation']\Element[@Name='ErrorMessageTemplates']\Element[@Name='RuleIsReferenced'];Element[@Name='Application']\Element[@Name='Validation']\Element[@Name='ErrorMessageTemplates']\Element[@Name='RuleRequiredField'];Element[@Name='Application']\Element[@Name='Validation']\Element[@Name='ErrorMessageTemplates']\Element[@Name='RuleFromBoolProperty'];Element[@Name='Application']\Element[@Name='Validation']\Element[@Name='ErrorMessageTemplates']\Element[@Name='RuleValueComparison'];Element[@Name='Application']\Element[@Name='Validation']\Element[@Name='ErrorMessageTemplates']\Element[@Name='RuleRange'];Element[@Name='Application']\Element[@Name='Validation']\Element[@Name='ErrorMessageTemplates']\Element[@Name='RuleStringComparison'];Element[@Name='Application']\Element[@Name='Validation']\Element[@Name='ErrorMessageTemplates']\Element[@Name='RuleRegularExpression'];Element[@Name='Application']\Element[@Name='Validation']\Element[@Name='ErrorMessageTemplates']\Element[@Name='RuleCriteria'];Element[@Name='Application']\Element[@Name='CreatableItems'];Element[@Name='Application']\Element[@Name='CreatableItems']\Element[@Name='Item'];Element[@Name='Application']\Element[@Name='NavigationItems'];Element[@Name='Application']\Element[@Name='NavigationItems']\Element[@Name='Group'];Element[@Name='Application']\Element[@Name='NavigationItems']\Element[@Name='Group']\Element[@Name='Item']" IsNewNode="True" />
 	</ModelEditor>
 	<SchemaModules>
-		<SchemaModule Name="SystemWindowsFormsModule" Version="8.3.2.5087" IsNewNode="True" />
 		<SchemaModule Name="ValidationModule" Version="8.3.2.5087" IsNewNode="True" />
 	</SchemaModules>
 	<Templates>
 		<Template ID="DevExpress.ExpressApp.Win.Templates.PopupForm">
 			<FormState ID="RuleSetValidationResult_ByTarget_Error_DetailView" State="Normal" X="460" Y="237" Width="360" Height="296" IsNewNode="True" />
 			<FormState ID="AboutInfo_DetailView" IsNewNode="True" />
+			<FormState ID="NewReportParams_DetailView" State="Normal" X="460" Y="241" Width="360" Height="296" IsNewNode="True" />
+			<FormState ID="ValidationResults_Passed_DetailView" State="Normal" X="460" Y="241" Width="360" Height="296" IsNewNode="True" />
 		</Template>
 		<Template ID="DevExpress.ExpressApp.Win.Templates.MainForm" NavigationWidth="146" NavigationDock="Left" NavigationVisibility="Visible" IsNewNode="True">
 			<FormState ID="Default" State="Maximized" MaximizedOnScreen="\\.\DISPLAY1" X="88" Y="116" Width="798" Height="598" IsNewNode="True" />
 			<NavBarCustomization Width="140" IsNewNode="True">
+				<Group ID="Reports" IsNewNode="True" />
 				<Group ID="Master Files" IsNewNode="True" />
 				<Group ID="Accounts Receivable" IsNewNode="True" />
 			</NavBarCustomization>
@@ -288,18 +308,33 @@
 			</XtraBarsCustomization>
 			<XtraBarsCustomization ID="ARVHeader_ARVOthers_ListView_BarsCustomization" IsNewNode="True" />
 			<XtraBarsCustomization ID="ARVOther_AuditTrail_ListView_BarsCustomization" IsNewNode="True" />
+			<XtraBarsCustomization ID="Company_AuditTrail_ListView_BarsCustomization" IsNewNode="True" />
+			<XtraBarsCustomization ID="Currency_AuditTrail_ListView_BarsCustomization" IsNewNode="True" />
+			<XtraBarsCustomization ID="BusinessPartner_AuditTrail_ListView_BarsCustomization" IsNewNode="True" />
+			<XtraBarsCustomization ID="BusinessPartnerType_AuditTrail_ListView_BarsCustomization" IsNewNode="True" />
+			<XtraBarsCustomization ID="ContextValidationResult_ListView_BarsCustomization" IsNewNode="True" />
 		</Template>
 		<Template ID="DevExpress.ExpressApp.Win.Templates.DetailViewForm" IsNewNode="True">
 			<FormState ID="Term_DetailView" State="Normal" X="272" Y="102" Width="798" Height="598" IsNewNode="True" />
 			<NavBarCustomization IsNewNode="True" />
-			<XtraBarsCustomization ID="Default" IsNewNode="True" />
+			<XtraBarsCustomization ID="Default" IsNewNode="True">
+				<Bar ID="Main Menu" IsNewNode="True">
+					<BarItem ID="barSubItemFile" IsNewNode="True">
+						<BarItem ID="cPrint" IsDeleted="True" IsNewNode="True" />
+						<BarItem ID="cExport" Index="3" IsNewNode="True" />
+					</BarItem>
+				</Bar>
+				<Bar ID="Main Toolbar" IsNewNode="True">
+					<BarItem ID="cClose" IsVisible="False" IsNewNode="True" />
+				</Bar>
+			</XtraBarsCustomization>
 			<FormState ID="UnitOfMeasure_DetailView" State="Normal" X="185" Y="140" Width="798" Height="598" IsNewNode="True" />
 			<FormState ID="Bank_DetailView" State="Normal" X="379" Y="137" Width="798" Height="598" IsNewNode="True" />
 			<FormState ID="BankAccount_DetailView" State="Normal" X="265" Y="91" Width="800" Height="594" IsNewNode="True" />
 			<FormState ID="DRHeader_DetailView" State="Normal" X="147" Y="150" Width="798" Height="598" IsNewNode="True" />
 			<FormState ID="DRItems_DetailView" State="Normal" X="145" Y="325" Width="798" Height="598" IsNewNode="True" />
 			<FormState ID="DROther_DetailView" State="Normal" X="88" Y="116" Width="798" Height="598" IsNewNode="True" />
-			<FormState ID="SOHeader_DetailView" State="Normal" X="416" Y="114" Width="798" Height="598" IsNewNode="True" />
+			<FormState ID="SOHeader_DetailView" State="Normal" X="301" Y="88" Width="798" Height="598" IsNewNode="True" />
 			<FormState ID="SOItems_DetailView" State="Normal" X="44" Y="58" Width="798" Height="598" IsNewNode="True" />
 			<FormState ID="SOOther_DetailView" State="Normal" X="88" Y="116" Width="798" Height="598" IsNewNode="True" />
 			<FormState ID="ARVHeader_DetailView" State="Normal" X="110" Y="145" Width="798" Height="598" IsNewNode="True" />
@@ -314,6 +349,9 @@
 			<FormState ID="Role_DetailView" State="Normal" X="22" Y="29" Width="798" Height="598" IsNewNode="True" />
 			<FormState ID="PersistentPermission_DetailView" State="Normal" X="44" Y="58" Width="798" Height="598" IsNewNode="True" />
 			<FormState ID="ARVOther_DetailView" State="Normal" X="151" Y="255" Width="798" Height="598" IsNewNode="True" />
+			<FormState ID="Currency_DetailView" State="Normal" X="110" Y="125" Width="798" Height="598" IsNewNode="True" />
+			<FormState ID="BusinessPartner_DetailView" State="Normal" X="132" Y="150" Width="798" Height="598" IsNewNode="True" />
+			<FormState ID="BusinessPartnerType_DetailView" State="Normal" X="154" Y="175" Width="798" Height="598" IsNewNode="True" />
 		</Template>
 		<Template ID="DevExpress.ExpressApp.Win.Templates.LookupForm" IsNewNode="True">
 			<FormState ID="Role_LookupListView" State="Normal" X="430" Y="240" Width="420" Height="289" IsNewNode="True" />
