@@ -1,2 +1,14 @@
-<?xml version="1.0" ?>
-<Application />
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application>
+	<ActionDesign>
+		<ActionToContainerMapping>
+			<ActionContainer ID="Print">
+				<ActionLink ActionID="ShowPrintOut" Index="0" />
+			</ActionContainer>
+		</ActionToContainerMapping>
+	</ActionDesign>
+	<SchemaModules>
+		<SchemaModule Name="DevExpress.ExpressApp.SystemModule.ShowNavigationItemController" Version="8.3.2.5087" />
+		<SchemaModule Name="SystemWindowsFormsModule" Version="8.3.2.5087" IsNewNode="True" />
+	</SchemaModules>
+</Application>

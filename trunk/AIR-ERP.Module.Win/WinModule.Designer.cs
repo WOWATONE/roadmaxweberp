@@ -33,6 +33,8 @@ namespace AIR_ERP.Module.Win
             // 
             this.RequiredModuleTypes.Add(typeof(AIR_ERP.Module.AIR_ERPModule));
             this.RequiredModuleTypes.Add(typeof(DevExpress.ExpressApp.Win.SystemModule.SystemWindowsFormsModule));
+            this.RequiredModuleTypes.Add(typeof(DevExpress.ExpressApp.Reports.Win.ReportsWindowsFormsModule));
+            this.RequiredModuleTypes.Add(typeof(DevExpress.ExpressApp.Printing.Win.PrintingWindowsFormsModule));
 
         }
 
