@@ -7,12 +7,10 @@ using DevExpress.Persistent.Base;
 using DevExpress.Persistent.BaseImpl;
 using DevExpress.Persistent.Validation;
 using DevExpress.Data.Filtering;
-using System.ComponentModel;
 
 namespace AIR_ERP.Module
 {
     [DefaultClassOptions]
-    [DefaultProperty("DocNum")]
     [ObjectCaptionFormat("{0:DocNum}{0:BusinessPartner}")]
     [NavigationItem("Accounts Receivable")]
     [RuleCriteria("RuleSOHeaderDocNum", DefaultContexts.Save, "DocNum != 0", "Document Number shouldn't be 0", SkipNullOrEmptyValues = false)]
@@ -471,7 +469,6 @@ namespace AIR_ERP.Module
     }
 
     [DefaultClassOptions]
-    [DefaultProperty("DocNum")]
     [ObjectCaptionFormat("{0:DocNum}{0:BusinessPartner}")]
     [NavigationItem("Accounts Receivable")]
     [RuleCriteria("RuleDRHeaderDocNum", DefaultContexts.Save, "DocNum != 0", "Document Number shouldn't be 0", SkipNullOrEmptyValues = false)]
@@ -896,7 +893,6 @@ namespace AIR_ERP.Module
 
     [DefaultClassOptions]
     [NavigationItem("Accounts Receivable")]
-    [DefaultProperty("DocNum")]
     [ObjectCaptionFormat("{0:DocNum}{0:BusinessPartner}")]
     [RuleCriteria("RuleARVHeaderDocNum", DefaultContexts.Save, "DocNum != 0", "Document Number shouldn't be 0", SkipNullOrEmptyValues = false)]
     public class ARVHeader : BaseObject

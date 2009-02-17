@@ -2,26 +2,29 @@
 <Application Title="AIR-ERP" Logo="ExpressAppLogo" Subtitle="Accounting System" Company="AIR-ERP Accounting System" Copyright="Blaire Duarte 2008">
 	<BOModel>
 		<Class Name="AIR_ERP.Module.Company" ImageName="House" DefaultListViewImage="House" />
-		<Class Name="AIR_ERP.Module.Branch" ImageName="Catalog" DefaultListViewImage="Catalog" />
-		<Class Name="AIR_ERP.Module.Employee" ImageName="User Card" DefaultListViewImage="User Card" />
+		<Class Name="AIR_ERP.Module.Branch" DefaultProperty="Branchname" ImageName="Catalog" DefaultListViewImage="Catalog" />
+		<Class Name="AIR_ERP.Module.Employee" DefaultProperty="FullName" ImageName="User Card" DefaultListViewImage="User Card" />
 		<Class Name="AIR_ERP.Module.Currency" ImageName="BO_Sale" DefaultListViewImage="BO_Sale" />
 		<Class Name="DevExpress.Persistent.BaseImpl.Country" ImageName="Home_01" DefaultListViewImage="Home_01" />
 		<Class Name="AIR_ERP.Module.AccountType" DefaultListViewImage="Usercard_01" ImageName="Usercard_01" DefaultDetailViewImage="Usercard_01" />
 		<Class Name="AIR_ERP.Module.Bank" ImageName="Bank" DefaultListViewImage="Bank" />
-		<Class Name="AIR_ERP.Module.BankAccount" DefaultListViewImage="Briefcase" ImageName="Briefcase" />
-		<Class Name="AIR_ERP.Module.VatCategory" ImageName="light" DefaultListViewImage="light" />
-		<Class Name="AIR_ERP.Module.BusinessPartnerType" ImageName="Users_Group" DefaultListViewImage="Users_Group" />
+		<Class Name="AIR_ERP.Module.BankAccount" DefaultProperty="AccountNumber" DefaultListViewImage="Briefcase" ImageName="Briefcase" />
+		<Class Name="AIR_ERP.Module.VatCategory" DefaultProperty="Description" ImageName="light" DefaultListViewImage="light" />
+		<Class Name="AIR_ERP.Module.BusinessPartnerType" DefaultProperty="Description" ImageName="Users_Group" DefaultListViewImage="Users_Group" />
 		<Class Name="AIR_ERP.Module.BusinessPartner" ImageName="Business_People_01" DefaultListViewImage="Business_People_01" />
-		<Class Name="AIR_ERP.Module.Term" ImageName="Calendar" DefaultListViewImage="Calendar" />
-		<Class Name="AIR_ERP.Module.ChartOfAccounts" DefaultListViewImage="Chart_02" ImageName="Chart_02" />
-		<Class Name="AIR_ERP.Module.ItemType" ImageName="Options" DefaultListViewImage="Options" />
-		<Class Name="AIR_ERP.Module.ProductGroup" ImageName="Department" DefaultListViewImage="Department" />
-		<Class Name="AIR_ERP.Module.UnitOfMeasure" ImageName="Folder_share" />
-		<Class Name="AIR_ERP.Module.ItemMaster" DefaultListViewImage="Card" ImageName="Card" />
+		<Class Name="AIR_ERP.Module.Term" DefaultProperty="TermDescription" ImageName="Calendar" DefaultListViewImage="Calendar" />
+		<Class Name="AIR_ERP.Module.ChartOfAccounts" DefaultProperty="Description" DefaultListViewImage="Chart_02" ImageName="Chart_02" />
+		<Class Name="AIR_ERP.Module.ItemType" DefaultProperty="Description" ImageName="Options" DefaultListViewImage="Options" />
+		<Class Name="AIR_ERP.Module.ProductGroup" DefaultProperty="Description" ImageName="Department" DefaultListViewImage="Department" />
+		<Class Name="AIR_ERP.Module.UnitOfMeasure" DefaultProperty="Description" ImageName="Folder_share" />
+		<Class Name="AIR_ERP.Module.ItemMaster" DefaultProperty="Description" DefaultListViewImage="Card" ImageName="Card" />
 		<Class Name="AIR_ERP.Module.Warehouse" DefaultListViewImage="Home" ImageName="Home" />
-		<Class Name="AIR_ERP.Module.SOHeader" Caption="Sales Order" ImageName="Shopping" DefaultListViewImage="Shopping">
+		<Class Name="AIR_ERP.Module.SOHeader" Caption="Sales Order" DefaultProperty="DocNum" ImageName="Shopping" DefaultListViewImage="Shopping">
 			<Member Name="DocNum" DisplayFormat="D8" />
 		</Class>
+		<Class Name="AIR_ERP.Module.DRHeader" DefaultProperty="DocNum" />
+		<Class Name="AIR_ERP.Module.DRItems" DefaultProperty="ItemMaster" />
+		<Class Name="AIR_ERP.Module.DROther" DefaultProperty="AccountId" />
 	</BOModel>
 	<Views>
 		<DetailView ID="MyLogonParameters_DetailView" Caption="Please Login">
@@ -54,6 +57,17 @@
 				</LayoutGroup>
 			</Layout>
 		</DetailView>
+		<ListView ID="Branch_LookupListView">
+			<Columns>
+				<ColumnInfo PropertyName="Currency" Removed="True" />
+				<ColumnInfo PropertyName="Branchaddress" Removed="True" />
+				<ColumnInfo PropertyName="BranchEmail" Removed="True" />
+				<ColumnInfo PropertyName="Branchname" Index="0" />
+				<ColumnInfo PropertyName="FaxNumber" Index="-1" />
+				<ColumnInfo PropertyName="TelNumber" Index="-1" />
+				<ColumnInfo PropertyName="Company" Index="-1" />
+			</Columns>
+		</ListView>
 		<ListView ID="AuditDataItemPersistent_ListView">
 			<Columns>
 				<ColumnInfo PropertyName="OldValue" Index="4" />
@@ -252,8 +266,8 @@
 		</Group>
 	</NavigationItems>
 	<SchemaModules IsNewNode="True">
-		<SchemaModule Name="SystemModule" Version="8.3.2.5087" IsNewNode="True" />
-		<SchemaModule Name="DevExpress.ExpressApp.SystemModule.HideActionsViewController" Version="8.3.2.5087" IsNewNode="True" />
-		<SchemaModule Name="DevExpress.ExpressApp.SystemModule.ShowNavigationItemController" Version="8.3.2.5087" IsNewNode="True" />
+		<SchemaModule Name="SystemModule" Version="8.3.4.5247" IsNewNode="True" />
+		<SchemaModule Name="DevExpress.ExpressApp.SystemModule.HideActionsViewController" Version="8.3.4.5247" IsNewNode="True" />
+		<SchemaModule Name="DevExpress.ExpressApp.SystemModule.ShowNavigationItemController" Version="8.3.4.5247" IsNewNode="True" />
 	</SchemaModules>
 </Application>

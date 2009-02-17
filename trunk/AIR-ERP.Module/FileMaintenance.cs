@@ -7,7 +7,6 @@ using DevExpress.ExpressApp;
 using DevExpress.Persistent.Base;
 using DevExpress.Persistent.BaseImpl;
 using DevExpress.Persistent.Validation;
-using System.ComponentModel;
 using DevExpress.Data.Filtering;
 
 namespace AIR_ERP.Module
@@ -15,7 +14,6 @@ namespace AIR_ERP.Module
     //Currency 
     [DefaultClassOptions]
     [RuleCriteria("", DefaultContexts.Save, "CurrencyRate != 0", "Currency Rate shouldn't be 0", SkipNullOrEmptyValues = false)]
-    [DefaultProperty("CurrencyName")]
     [ObjectCaptionFormat("{0:CurrencyName}")]
     public class Currency : BaseObject
     {
@@ -62,12 +60,10 @@ namespace AIR_ERP.Module
     }
     //Company
     [DefaultClassOptions]
-    [DefaultProperty("CompanyName")]
     [ObjectCaptionFormat("{0:CompanyName}")]
     public class Company : BaseObject
     {
         public Company(Session session) : base(session) { }
-
         private Currency currency;
         [RuleRequiredField("RuleRequiredField for Company.Currency", DefaultContexts.Save)]
         public Currency Currency
@@ -185,7 +181,6 @@ namespace AIR_ERP.Module
     }
     //Branch
     [DefaultClassOptions]
-    [DefaultProperty("Branchname")]
     [ObjectCaptionFormat("{0:Branchname}")]
     public class Branch : BaseObject
     {
@@ -337,7 +332,6 @@ namespace AIR_ERP.Module
 
     //Account Type
     [DefaultClassOptions]
-    [DefaultProperty("Description")]
     [ObjectCaptionFormat("{0:Description}")]
     public class AccountType : BaseObject
     {
@@ -403,7 +397,6 @@ namespace AIR_ERP.Module
 
     //Bank FM
     [DefaultClassOptions]
-    [DefaultProperty("BankName")]
     [ObjectCaptionFormat("{0:BankName}")]
     public class Bank : BaseObject
     {
@@ -469,7 +462,6 @@ namespace AIR_ERP.Module
 
     //Bank Account
     [DefaultClassOptions]
-    [DefaultProperty("AccountNumber")]
     [ObjectCaptionFormat("{0:AccountNumber}")]
     public class BankAccount : BaseObject
     {
@@ -608,7 +600,6 @@ namespace AIR_ERP.Module
     }
 
     [DefaultClassOptions]
-    [DefaultProperty("Description")]
     [ObjectCaptionFormat("{0:Description}")]
     public class VatCategory : BaseObject
     {
@@ -667,7 +658,6 @@ namespace AIR_ERP.Module
 
     //Business Partner's Type
     [DefaultClassOptions]
-    [DefaultProperty("Description")]
     [ObjectCaptionFormat("{0:Description}")]
     public class BusinessPartnerType : BaseObject
     {
@@ -721,7 +711,6 @@ namespace AIR_ERP.Module
     }
 
     [DefaultClassOptions]
-    [DefaultProperty("BusinessPartnerName")]
     [ObjectCaptionFormat("{0:BusinessPartnerName}")]
     public class BusinessPartner : BaseObject
     {
@@ -904,7 +893,6 @@ namespace AIR_ERP.Module
 
     }
     [DefaultClassOptions]
-    [DefaultProperty("TermDescription")]
     [ObjectCaptionFormat("{0:TermDescription}")]
     public class Term : BaseObject
     {
@@ -983,7 +971,6 @@ namespace AIR_ERP.Module
     }
 
     [DefaultClassOptions]
-    [DefaultProperty("Description")]
     [ObjectCaptionFormat("{0:Description}")]
     public class ChartOfAccounts : BaseObject
     {
@@ -1098,7 +1085,6 @@ namespace AIR_ERP.Module
     }
 
     [DefaultClassOptions]
-    [DefaultProperty("Description")]
     [ObjectCaptionFormat("{0:Description}")]
     public class ItemType : BaseObject
     {
@@ -1163,7 +1149,6 @@ namespace AIR_ERP.Module
     }
 
     [DefaultClassOptions]
-    [DefaultProperty("Description")]
     [ObjectCaptionFormat("{0:Description}")]
     public class ProductGroup : BaseObject
     {
@@ -1228,7 +1213,6 @@ namespace AIR_ERP.Module
     }
 
     [DefaultClassOptions]
-    [DefaultProperty("Description")]
     [ObjectCaptionFormat("{0:Description}")]
     public class UnitOfMeasure : BaseObject
     {
@@ -1293,7 +1277,6 @@ namespace AIR_ERP.Module
     }
 
     [DefaultClassOptions]
-    [DefaultProperty("Description")]
     [ObjectCaptionFormat("{0:Description}")]
     public class ItemMaster : BaseObject
     {
@@ -1616,7 +1599,6 @@ namespace AIR_ERP.Module
     }
 
     [DefaultClassOptions]
-    [DefaultProperty("WarehouseName")]
     [ObjectCaptionFormat("{0:WarehouseName}")]
     public class Warehouse : BaseObject
     {
