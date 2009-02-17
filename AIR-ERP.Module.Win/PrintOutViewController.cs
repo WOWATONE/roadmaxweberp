@@ -23,9 +23,14 @@ namespace AIR_ERP.Module.Win
 
         private void printOut_Execute(object sender, SimpleActionExecuteEventArgs e)
         {
+            String currentOid = "";
             ReportData reportdata = ObjectSpace.FindObject<ReportData>(new BinaryOperator("Name", View.ObjectType.Name + "PrintOut"));
             XtraReport xr = reportdata.LoadXtraReport(ObjectSpace);
-            xr.DataSource = View.SelectedObjects;
+            currentOid = (((DevExpress.ExpressApp.DetailView)View).CurrentObject.ToString().Remove(0,
+                (((DevExpress.ExpressApp.DetailView)View).CurrentObject.ToString().Length) - 38));
+            currentOid = currentOid.Replace("(", "{");
+            currentOid = currentOid.Replace(")", "}");
+            xr.FilterString = "[Oid] = " + currentOid;
             xr.ShowPreviewDialog();
         }
     }
