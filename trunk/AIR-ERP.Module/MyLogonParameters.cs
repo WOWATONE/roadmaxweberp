@@ -43,7 +43,7 @@ namespace AIR_ERP.Module
 
             if (branch != null && availableBranch.IndexOf(branch) == -1)
             {
-                branch = null;
+                Branch = null;
             }
         }
 
