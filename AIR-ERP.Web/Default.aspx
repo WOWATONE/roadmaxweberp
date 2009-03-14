@@ -1,4 +1,4 @@
-<%@ Page Language="C#" AutoEventWireup="true" Inherits="Default" EnableViewState="false" validateRequest="false" Codebehind="Default.aspx.cs" %>
+<%@ Page Language="C#" AutoEventWireup="true" Inherits="DefaultVertical" EnableViewState="false" validateRequest="false" Codebehind="DefaultVertical.aspx.cs" %>
 
 <%@ Register Assembly="DevExpress.Web.v8.3" Namespace="DevExpress.Web.ASPxRoundPanel"
     TagPrefix="dxrp" %>
@@ -11,47 +11,76 @@
 	<title>Main Page</title>
 	<meta http-equiv="Expires" content="0" />
 </head>
-<body onload="OnLoad()">
+<body onload="OnLoad()" class="VerticalTemplate">
     <div id="PageContent" class="PageContent">
     <script src="MoveFooter.js" type="text/javascript"></script>
 	<cc4:ProgressControl ID="ProgressControl" runat="server" ImageName="~/Images/Progress.gif" CssClass="Progress" Text="" />
 	<form id="form1" runat="server">
-    <table cellpadding="0" cellspacing="0" border="0" class="Top" width="100%">
-        <tr>
-            <td class="Logo">
-                <asp:HyperLink runat="server" NavigateUrl="~/" ID="LogoLink">
-                    <asp:Image ID="LogoImage" runat="server" />
-                </asp:HyperLink>
-            </td>
-            <td class="Security">
-                <cc2:WebActionContainer runat="server" ID="SecurityActionContainer" ContainerId="Security" ContainerStyle="Links" ImageTextStyle="CaptionAndImage" CssClass="Security"/>
-            </td>
-        </tr>
-    </table>
+        <table cellpadding="0" cellspacing="0" border="0" class="Top" width="100%">
+            <tr>
+                <td class="Logo">
+                    <asp:HyperLink runat="server" NavigateUrl="~/" ID="LogoLink">
+                        <asp:Image ID="LogoImage" runat="server" />
+                    </asp:HyperLink>
+                </td>
+                <td class="Security">
+                    <cc2:WebActionContainer runat="server" ID="SecurityActionContainer" ContainerId="Security" ContainerStyle="Links" ImageTextStyle="CaptionAndImage" CssClass="Security"/>
+                </td>
+            </tr>
+        </table>
 
-    <cc2:NavigationTabsActionContainer ID="NavigationTabsActionContainer" runat="server" ContainerId="ViewsNavigation" />
+        <table border="0" cellpadding="0" cellspacing="0" class="DarkPanel" width="100%">
+            <tr class="Top">
+                <td><div class="TL"></div></td>
+	            <td class="Empty TopBorder">&nbsp;</td>
+	            <td><div class="TR"></div></td>
+            </tr>
+            <tr class="Content">
+	            <td class="Content WithPaddings" colspan="3">
+		            <table border="0" cellpadding="0" cellspacing="0" class="Search" width="100%">
+			            <tr>
+			                <td class="left" align="left"><cc2:WebActionContainer ID="VerticalNewActionContainer" runat="server" ContainerId="RootObjectsCreation" ContainerStyle="Buttons" /></td>
+				            <td class="right" align="right"><cc2:WebActionContainer ID="SearchActionContainer" runat="server" ContainerId="Search" ContainerStyle="Buttons" /></td>
+			            </tr>
+		            </table>
+                </td>
+            </tr>
+            <tr class="Bottom">
+                <td><div class="BL"></div></td>
+                <td class="Empty BottomBorder">&nbsp;</td>
+                <td><div class="BR"></div></td>
+            </tr>
+        </table>
 
-        <div style="padding: 5px">
-		    <table border="0" cellpadding="0" cellspacing="0" class="Search" width="100%">
-			    <tr>
-			        <td class="left" align="left"><cc2:WebActionContainer ID="VerticalNewActionContainer" runat="server" ContainerId="RootObjectsCreation" ContainerStyle="Buttons" /></td>
-				    <td class="right" align="right"><cc2:WebActionContainer ID="SearchActionContainer" runat="server" ContainerId="Search" ContainerStyle="Buttons" /></td>
-			    </tr>
-		    </table>
-        </div>
 		<table border="0" cellpadding="0" cellspacing="0" class="Main" width="100%">
 			<tr>
 			    <td class="Left" id="left_panel">
+		            <table border="0" cellpadding="0" cellspacing="0" class="DarkPanel" width="100%">
+			            <tr class="Top">
+			                <td><div class="TL"></div></td>
+				            <td class="Empty TopBorder">&nbsp;</td>
+				            <td><div class="TR"></div></td>
+			            </tr>
+			            <tr class="Content">
+				            <td class="Content" colspan="3">
+            			        <cc2:NavigationBarActionContainer ID="NavigationBarActionContainer" runat="server" ContainerId="ViewsNavigation" AutoCollapse="True"/>
+		                    </td>
+	                    </tr>
+	                    <tr class="Bottom">
+	                        <td><div class="BL"></div></td>
+		                    <td class="Empty BottomBorder">&nbsp;</td>
+		                    <td><div class="BR"></div></td>
+	                    </tr>
+                    </table>
                     <dxrp:ASPxRoundPanel ID="ToolsRoundPanel" runat="server" Width="100%" HeaderText="Tools">
                      <PanelCollection>
                          <dxrp:PanelContent ID="PanelContent1" runat="server">
-                               <cc2:WebActionContainer id="VerticalToolsActionContainer" runat="server" Orientation="Vertical" CssClass="VContainer" ContainerId="Tools" BorderWidth="0px"></cc2:WebActionContainer>
+                               <cc2:WebActionContainer id="VerticalToolsActionContainer" runat="server" CssClass="VContainer" ContainerId="Tools" Orientation="Vertical" ></cc2:WebActionContainer>
                          </dxrp:PanelContent>
                      </PanelCollection>
                     </dxrp:ASPxRoundPanel>
                 </td>
 				<td class="Right">
-				
 		            <table border="0" cellpadding="0" cellspacing="0" class="MainContent" width="100%">
 			            <tr class="Top">
 			                <td><div class="TL"></div></td>

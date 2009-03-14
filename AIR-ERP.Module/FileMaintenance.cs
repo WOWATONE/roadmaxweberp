@@ -1064,6 +1064,7 @@ namespace AIR_ERP.Module
         }
 
         private ChartOfAccounts parentAccountId;
+        [DataSourceCriteria("IsParent = True and IsActive = True")]
         public ChartOfAccounts ParentAccountId
         {
             get { return parentAccountId; }

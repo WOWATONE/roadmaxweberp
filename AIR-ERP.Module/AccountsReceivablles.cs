@@ -78,7 +78,12 @@ namespace AIR_ERP.Module
             set
             {
                 SetPropertyValue("BusinessPartner", ref businessPartner, value);
-
+                if (value != null && !IsLoading)
+                {
+                    VatCategory = value.VatCategory;
+                    Term = value.Term;
+                    Currency = value.Currency;
+                }
             }
         }
 
@@ -204,6 +209,7 @@ namespace AIR_ERP.Module
     [DefaultClassOptions]
     [NavigationItem(false)]
     [CreatableItem(false)]
+    [ObjectCaptionFormat("{0:SOHeader.DocNum}")]
     [RuleCriteria("RuleSOItemsQuantity", DefaultContexts.Save, "Quantity != 0", "Quantity shouldn't be 0", SkipNullOrEmptyValues = false)]
     [RuleCriteria("RuleSOItemsPrice", DefaultContexts.Save, "Price != 0", "Price shouldn't be 0", SkipNullOrEmptyValues = false)]
     public class SOItems : BaseObject
@@ -213,12 +219,19 @@ namespace AIR_ERP.Module
         private ItemMaster itemMaster;
         [RuleRequiredField("RuleRequiredField for SOItems.ItemMaster", DefaultContexts.Save)]
         [DataSourceCriteria("IsActive = True")]
+        [ImmediatePostData]
         public ItemMaster ItemMaster
         {
             get { return itemMaster; }
             set
             {
                 SetPropertyValue("ItemMaster", ref itemMaster, value);
+                if (value != null && !IsLoading)
+                {
+                    UnitOfMeasure = value.UnitOfMeasure;
+                    Price = value.LastPrice;
+                    Cost = value.LastCost;
+                }
             }
         }
 
@@ -536,7 +549,12 @@ namespace AIR_ERP.Module
             set
             {
                 SetPropertyValue("BusinessPartner", ref businessPartner, value);
-
+                if (value != null && !IsLoading)
+                {
+                    VatCategory = value.VatCategory;
+                    Term = value.Term;
+                    Currency = value.Currency;
+                }
             }
         }
 
@@ -669,12 +687,19 @@ namespace AIR_ERP.Module
         private ItemMaster itemMaster;
         [RuleRequiredField("RuleRequiredField for DRItems.ItemMaster", DefaultContexts.Save)]
         [DataSourceCriteria("IsActive = True")]
+        [ImmediatePostData]
         public ItemMaster ItemMaster
         {
             get { return itemMaster; }
             set
             {
                 SetPropertyValue("ItemMaster", ref itemMaster, value);
+                if (value != null && !IsLoading)
+                {
+                    UnitOfMeasure = value.UnitOfMeasure;
+                    Price = value.LastPrice;
+                    Cost = value.LastCost;
+                }
             }
         }
 
@@ -779,6 +804,28 @@ namespace AIR_ERP.Module
             }
         }
 
+        private SOItems soItems;
+        [ImmediatePostData]
+        public SOItems SoItems
+        {
+            get { return soItems; }
+            set
+            {
+                SetPropertyValue("SoItems", ref soItems, value);
+                if (value != null && !IsLoading)
+                {
+                    ItemMaster = soItems.ItemMaster;
+                    Quantity = soItems.Quantity;
+                    Price = soItems.Price;
+                    Cost = soItems.Cost;
+                    Discount = soItems.Discount;
+                    DiscountRate = soItems.DiscountRate;
+                    UnitOfMeasure = soItems.UnitOfMeasure;
+                    Warehouse = soItems.Warehouse;
+                }
+            }
+        }
+
         private DRHeader DoH;
         [Association("DRHeader-DRItem")]
         public DRHeader DRHeader
@@ -786,6 +833,8 @@ namespace AIR_ERP.Module
             get { return DoH; }
             set { SetPropertyValue("DRHeader", ref DoH, value); }
         }
+
+
 
         private XPCollection<AuditDataItemPersistent> auditTrail;
         public XPCollection<AuditDataItemPersistent> AuditTrail
@@ -959,7 +1008,12 @@ namespace AIR_ERP.Module
             set
             {
                 SetPropertyValue("BusinessPartner", ref businessPartner, value);
-
+                if (value != null && !IsLoading)
+                {
+                    VatCategory = value.VatCategory;
+                    Term = value.Term;
+                    Currency = value.Currency;
+                }
             }
         }
 
