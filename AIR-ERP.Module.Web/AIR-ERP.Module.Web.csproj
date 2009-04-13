@@ -33,37 +33,37 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Data.v8.3">
+    <Reference Include="DevExpress.Data.v9.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.v8.3">
+    <Reference Include="DevExpress.ExpressApp.v9.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Images.v8.3">
+    <Reference Include="DevExpress.ExpressApp.Images.v9.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Objects.v8.3">
+    <Reference Include="DevExpress.ExpressApp.Objects.v9.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Security.v8.3">
+    <Reference Include="DevExpress.ExpressApp.Security.v9.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Validation.v8.3">
+    <Reference Include="DevExpress.ExpressApp.Validation.v9.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Web.v8.3">
+    <Reference Include="DevExpress.ExpressApp.Web.v9.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Persistent.Base.v8.3">
+    <Reference Include="DevExpress.Persistent.Base.v9.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Persistent.BaseImpl.v8.3">
+    <Reference Include="DevExpress.Persistent.BaseImpl.v9.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Web.v8.3">
+    <Reference Include="DevExpress.Web.v9.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Xpo.v8.3">
+    <Reference Include="DevExpress.Xpo.v9.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="System">

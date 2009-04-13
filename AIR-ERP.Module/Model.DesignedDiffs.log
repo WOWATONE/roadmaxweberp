@@ -217,3 +217,325 @@ Loaded assemblies
 	XafDomain, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=InMemory Module
 ================================================================================
 
+12.04.09 18:47:17.171	================================================================================
+The error occured:
+
+	Type:       Exception
+	Message:    The 'BusinessPartner' node key is duplicated:
+ - 'Application\Views\DetailView[@ID='DMarHeader_DetailView']\Layout\LayoutGroup[@ID='Main']\LayoutGroup[@ID='SimpleEditors']\LayoutItem[@ID='BusinessPartner']'
+ - 'Application\Views\DetailView[@ID='DMarHeader_DetailView']\Layout\LayoutGroup[@ID='Main']\LayoutGroup[@ID='SimpleEditors']\LayoutGroup[@ID='DMarHeader']\LayoutGroup[@ID='DMarHeader_col1']\LayoutItem[@ID='BusinessPartner']'
+The Layout node should contain child nodes with unique keys
+The 'BusinessPartner' node key is duplicated:
+ - 'Application\Views\DetailView[@ID='PRHeader_DetailView']\Layout\LayoutGroup[@ID='Main']\LayoutGroup[@ID='SimpleEditors']\LayoutItem[@ID='BusinessPartner']'
+ - 'Application\Views\DetailView[@ID='PRHeader_DetailView']\Layout\LayoutGroup[@ID='Main']\LayoutGroup[@ID='SimpleEditors']\LayoutGroup[@ID='PRHeader']\LayoutGroup[@ID='PRHeader_col1']\LayoutItem[@ID='BusinessPartner']'
+The Layout node should contain child nodes with unique keys
+The 'BusinessPartner' node key is duplicated:
+ - 'Application\Views\DetailView[@ID='CMarHeader_DetailView']\Layout\LayoutGroup[@ID='Main']\LayoutGroup[@ID='SimpleEditors']\LayoutItem[@ID='BusinessPartner']'
+ - 'Application\Views\DetailView[@ID='CMarHeader_DetailView']\Layout\LayoutGroup[@ID='Main']\LayoutGroup[@ID='SimpleEditors']\LayoutGroup[@ID='CMarHeader']\LayoutGroup[@ID='CMarHeader_col1']\LayoutItem[@ID='BusinessPartner']'
+The Layout node should contain child nodes with unique keys
+
+	Data:       0 entries
+	Stack trace:
+
+   at DevExpress.ExpressApp.Utils.ApplicationModelValidator.ValidateModel(Dictionary model)
+   at DevExpress.ExpressApp.Utils.ApplicationModelValidator.Dictionary_Validation(Object sender, EventArgs e)
+   at DevExpress.ExpressApp.Dictionary.Validate()
+   at DevExpress.ExpressApp.ApplicationModulesManager.LoadModel(ITypesInfo typesInfo)
+   at DevExpress.ExpressApp.ApplicationModulesManager.Load(ITypesInfo typesInfo)
+   at DevExpress.ExpressApp.ApplicationModulesManager.Load()
+   at DevExpress.ExpressApp.Design.ModelEditor.ModelLoader.LoadModel(ITypeDiscoveryService typeDiscoveryService, ITypeResolutionService typeResolutionService)
+   at DevExpress.ExpressApp.Design.ModelEditor.EditorPane.PrivateInit(String fileName, ModelLoader modelLoader)
+	InnerException is null
+
+--------------------------------------------------------------------------------
+Loaded assemblies
+	Accessibility, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	AIR-ERP.Module, Version=1.0.3389.33693, Culture=neutral, PublicKeyToken=null, Location=
+	c6z1sq91, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Code_Creation, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Code_Declare, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Code_Deletions, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Code_Inversion, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Code_References, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Code_Rotate, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	COM2InteropEmit, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=InMemory Module
+	CR_AdvancedSelections, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	CR_ClickIdentifier, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	CR_ClipboardHistory, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	CR_CodeIssueUI, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	CR_DropMarkerBeforeJump, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	CR_DuplicateLine, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	CR_Embedding, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	CR_EnumAssist, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	CR_ExpressionFocus, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	CR_FlowBreak, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	CR_ForEach, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	CR_Intellassist, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	CR_MemberIcons, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	CR_MemberMover, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	CR_MemberOrg, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	CR_Navigation, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	CR_NextReference, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	CR_PathAssist, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	CR_ProductModule, Version=9.1.2.0, Culture=neutral, PublicKeyToken=3f8e338797a7a380, Location=
+	CR_QuickNav, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	CR_RecentFiles, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	CR_References, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	CR_Regions, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	CR_RightMarginLine, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	CR_SelectionHandling, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	CR_ShowMetrics, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	CR_SmartConstructor, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	CR_SmartEnter, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	CR_SmartExpressions, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	CR_SmartPaste, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	CR_SmartTemplates, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	CR_SpellChecker, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	CR_StepIntoMember, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	CR_StructuralHighlighting, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	CR_TableSizeUI, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	CR_Templates, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	CR_Training, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	CR_TrainingVideos, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	CR_VSHelpers, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	CR_XpressCSharpProductModule, Version=9.1.2.0, Culture=neutral, PublicKeyToken=3f8e338797a7a380, Location=
+	CustomMarshalers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	DevExpress.Charts.v9.1.Core, Version=9.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.CodeRush.Common, Version=9.1.2.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, Location=
+	DevExpress.CodeRush.Core, Version=9.1.2.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, Location=
+	DevExpress.CodeRush.Extensions, Version=9.1.2.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, Location=
+	DevExpress.CodeRush.Interop, Version=9.1.2.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, Location=
+	DevExpress.CodeRush.Library, Version=9.1.2.0, Culture=neutral, PublicKeyToken=e1a72e979dafdca7, Location=
+	DevExpress.CodeRush.PlugInCore, Version=9.1.2.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, Location=
+	DevExpress.CodeRush.Shell, Version=9.1.2.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, Location=
+	DevExpress.CodeRush.StructuralParser, Version=9.1.2.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, Location=
+	DevExpress.CodeRush.UserControls, Version=9.1.2.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, Location=
+	DevExpress.CodeRush.VSCore, Version=9.1.2.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, Location=
+	DevExpress.CodeRush.VSCore90, Version=9.1.2.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, Location=
+	DevExpress.Data.v9.1, Version=9.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.DXCore.Controls.Data.v6.3, Version=9.1.2.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, Location=
+	DevExpress.DXCore.Controls.Utils.v6.3, Version=9.1.2.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, Location=
+	DevExpress.DXCore.Controls.XtraBars.v6.3, Version=9.1.2.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, Location=
+	DevExpress.DXCore.Controls.XtraEditors.v6.3, Version=9.1.2.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, Location=
+	DevExpress.DXCore.Controls.XtraSpellChecker.v6.3, Version=9.1.2.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, Location=
+	DevExpress.DXCore.Controls.XtraSpellChecker.v6.3.Core, Version=9.1.2.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, Location=
+	DevExpress.DXCore.Controls.XtraTreeList.v6.3, Version=9.1.2.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, Location=
+	DevExpress.DXCore.Loader, Version=9.1.2.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, Location=
+	DevExpress.DXCore.MetaData, Version=9.1.2.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, Location=
+	DevExpress.DXCore.Shell, Version=9.1.2.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, Location=
+	DevExpress.ExpressApp.Design.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Design.CRActions, Version=9.1.2.5458, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Design.CRCommandCenter, Version=9.1.2.5458, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Design.CRContexts, Version=9.1.2.5458, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Design.CRExtensions, Version=9.1.2.5458, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Design.ModelEditor.v9.1, Version=9.1.2.5458, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Design.v9.1, Version=9.1.2.5458, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Objects.v9.1, Version=9.1.2.5458, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Reports.v9.1, Version=9.1.2.5458, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Security.v9.1, Version=9.1.2.5458, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.v9.1, Version=9.1.2.5458, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Validation.v9.1, Version=9.1.2.5458, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.ExpressApp.Win.v9.1, Version=9.1.2.5458, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Persistent.Base.v9.1, Version=9.1.2.5458, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Persistent.BaseImpl.v9.1, Version=9.1.2.5458, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Refactor.Core, Version=9.1.2.0, Culture=neutral, PublicKeyToken=3f8e338797a7a380, Location=
+	DevExpress.Refactor.Core.ASP, Version=9.1.2.0, Culture=neutral, PublicKeyToken=3f8e338797a7a380, Location=
+	DevExpress.Registration.AddIn, Version=9.1.0.0, Culture=neutral, PublicKeyToken=940cfcde86f32efd, Location=
+	DevExpress.Registration.Components, Version=9.1.0.0, Culture=neutral, PublicKeyToken=940cfcde86f32efd, Location=
+	DevExpress.Registration.IDETools, Version=9.1.0.0, Culture=neutral, PublicKeyToken=940cfcde86f32efd, Location=
+	DevExpress.Registration.Utils, Version=9.1.0.0, Culture=neutral, PublicKeyToken=940cfcde86f32efd, Location=
+	DevExpress.Utils.v9.1, Version=9.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.Xpo.v9.1, Version=9.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.XtraCharts.v9.1, Version=9.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.XtraEditors.v9.1, Version=9.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.XtraPivotGrid.v9.1, Version=9.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.XtraPivotGrid.v9.1.Core, Version=9.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.XtraPrinting.v9.1, Version=9.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.XtraReports.v9.1, Version=9.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	DevExpress.XtraTreeList.v9.1, Version=9.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=
+	djocl1ne, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	DX_About, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	DX_AspExtensions, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	DX_CodeStyle, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	DX_ContentEngine, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	DX_ContextResolver, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	DX_CoreProviders, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	DX_CPPLanguage, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	DX_CSharpLanguage, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	DX_EvalWelcome, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	DX_FeatureEngine, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	DX_IncParseEngine, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	DX_IntellassistEngine, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	DX_JavaScriptLanguage, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	DX_LinkedIdentifierEngine, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	DX_MarkerEngine, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	DX_PlugInManager, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	DX_RegExEngine, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	DX_RegistrationModule, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	DX_ShortcutEngine, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	DX_SmartPasteEngine, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	DX_SmartTagEngine, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	DX_SourceTreeResolver, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	DX_TextExpansionEngine, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	DX_TextFieldEngine, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	DX_VBLanguage, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	DX_XmlLanguage, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	EnvDTE, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	EnvDTE80, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Extensibility, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.Build.Engine, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.Build.Framework, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.Build.Tasks.v3.5, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.Build.Utilities.v3.5, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.Data.Entity.Design.Package, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.Internal.VisualStudio.Shell.Interop.9.0, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.MSXML, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualBasic, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.CommandBars, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.CommonIDE, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.Debugger.Interop, Version=8.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.Design, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.Designer.Interfaces, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.Editors, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.ManagedInterfaces.WCF, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.OLE.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.ORDesigner.DslPackage, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.Package.LanguageService.9.0, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.Shell, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.Shell.9.0, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.Shell.Design, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.Shell.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.Shell.Interop.8.0, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.Shell.Interop.9.0, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.TemplateWizardInterface, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.TextManager.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.TextManager.Interop.8.0, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.VCProjectEngine, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.VSHelp80, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.WCFReference.Interop, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.Web, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.Web.Application, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.Windows.Forms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.Xaml, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.Xaml.LanguageService, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VisualStudio.XmlEditor, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.VSDesigner, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.Windows.Design.Host, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.Windows.Design.Markup, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	Microsoft.XmlEditor, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	PresentationCore, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Location=
+	PresentationFramework, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Location=
+	Refactor_AddAssociatedControlID, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_AddRunAt, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_AddValidator, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_AnonymousTypes, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_AspProductModule, Version=9.1.2.0, Culture=neutral, PublicKeyToken=3f8e338797a7a380, Location=
+	Refactor_Attributes, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_BooleanToEnum, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_BreakApartLineUpAttributes, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_CombineConditionals, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_Conditionals, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_ConvertColor, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_ConvertLength, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_ConvertToSkin, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_ConvertTypes, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_CppProductModule, Version=9.1.2.0, Culture=neutral, PublicKeyToken=3f8e338797a7a380, Location=
+	Refactor_CreateMethodContract, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_CreateMethodStub, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_CreateMultivariableDeclaration, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_CreateOverload, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_CreateSetterMethod, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_Declarations, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_DecomposeParameters, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_DefineDirectives, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_Delegates, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_EncapsulateDowncast, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_Engine, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_ExtraConditionals, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_ExtractContentPlaceHolder, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_ExtractInterface, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_Extractions, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_ExtractionsXAML, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_ExtractScript, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_ExtractStyle, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_ExtractUserControl, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_Files, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_FlattenConditional, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_Formatting, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_Initializers, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_InlineDelegate, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_InlineMacro, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_InlineRecentAssignment, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_InlineResult, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_IntroduceConstant, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_IntroduceParameterObject, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_IntroduceUsing, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_Loops, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_MakeExtensionMethod, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_MakeIdUnique, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_MergeStyles, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_MethodToProperty, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_MoveMembers, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_MoveMethod, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_MoveStyleToCss, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_MoveToCodeBehind, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_NameAnonymousMethod, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_NullCoalescingOperation, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_OptimizeUsings, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_Parameters, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_ProductModule, Version=9.1.2.0, Culture=neutral, PublicKeyToken=3f8e338797a7a380, Location=
+	Refactor_PromoteConstantToClass, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_PromoteToParameter, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_Properties, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_PropertyToMethod, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_RemoveRedundantElement, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_RemoveTag, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_RenameStyle, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_Renaming, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_ReorderAttributes, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_ReorderParams, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_Replacement, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_Resources, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_SetCssClass, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_SplitCallParameters, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_SplitMultivariableDeclaration, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_SplitWithStatement, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_Statements, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_Strings, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_SurroundWith, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_SurroundWithUpdatePanel, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_SwitchConditionals, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_Tags, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_Temps, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_ToggleViewState, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_UseStringFormat, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_VBProductModule, Version=9.1.2.0, Culture=neutral, PublicKeyToken=3f8e338797a7a380, Location=
+	Refactor_VBSpecific, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_Visibilities, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_WidenScope, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	Refactor_WithStatement, Version=9.1.2.0, Culture=neutral, PublicKeyToken=null, Location=
+	stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.Configuration, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Drawing.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Reflection, Version=2.0.0.0, Culture=neutral, PublicKeyToken=1fc059c86381693f, Location=
+	System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Web.RegularExpressions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=
+	VSLangProj, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	VSLangProj80, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	VsWebSite.Interop, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=
+	WindowsBase, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Location=
+	XafDomain, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=InMemory Module
+	XafDomain, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=InMemory Module
+	XafDomain, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=InMemory Module
+================================================================================
+

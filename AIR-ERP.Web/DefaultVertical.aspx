@@ -1,10 +1,10 @@
 <%@ Page Language="C#" AutoEventWireup="true" Inherits="Default" EnableViewState="false" validateRequest="false" Codebehind="Default.aspx.cs" %>
 
-<%@ Register Assembly="DevExpress.Web.v8.3" Namespace="DevExpress.Web.ASPxRoundPanel"
+<%@ Register Assembly="DevExpress.Web.v9.1" Namespace="DevExpress.Web.ASPxRoundPanel"
     TagPrefix="dxrp" %>
-<%@ Register Assembly="DevExpress.ExpressApp.Web.v8.3" Namespace="DevExpress.ExpressApp.Web.Templates.ActionContainers" TagPrefix="cc2" %>
-<%@ Register Assembly="DevExpress.ExpressApp.Web.v8.3" Namespace="DevExpress.ExpressApp.Web.Controls" TagPrefix="cc4" %>
-<%@ Register Assembly="DevExpress.ExpressApp.Web.v8.3" Namespace="DevExpress.ExpressApp.Web.Templates.Controls" TagPrefix="tc" %>
+<%@ Register Assembly="DevExpress.ExpressApp.Web.v9.1" Namespace="DevExpress.ExpressApp.Web.Templates.ActionContainers" TagPrefix="cc2" %>
+<%@ Register Assembly="DevExpress.ExpressApp.Web.v9.1" Namespace="DevExpress.ExpressApp.Web.Controls" TagPrefix="cc4" %>
+<%@ Register Assembly="DevExpress.ExpressApp.Web.v9.1" Namespace="DevExpress.ExpressApp.Web.Templates.Controls" TagPrefix="tc" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -27,7 +27,7 @@
                 <cc2:WebActionContainer runat="server" ID="SecurityActionContainer" ContainerId="Security" ContainerStyle="Links" ImageTextStyle="CaptionAndImage" CssClass="Security"/>
             </td>
         </tr>
-    </table>
+    </table>    
 
     <cc2:NavigationTabsActionContainer ID="NavigationTabsActionContainer" runat="server" ContainerId="ViewsNavigation" />
 

@@ -1,5 +1,5 @@
 <%@ Control Language="C#" AutoEventWireup="true" EnableViewState="false" Inherits="NestedFrameControl" Codebehind="NestedFrameControl.ascx.cs" %>
-<%@ Register Assembly="DevExpress.ExpressApp.Web.v8.3" Namespace="DevExpress.ExpressApp.Web.Templates.ActionContainers" TagPrefix="cc2" %>
+<%@ Register Assembly="DevExpress.ExpressApp.Web.v9.1" Namespace="DevExpress.ExpressApp.Web.Templates.ActionContainers" TagPrefix="cc2" %>
     		<cc2:ActionContainerHolder runat="server" ID="ToolBar" ContainerStyle="ToolBar" ImageTextStyle="CaptionAndImage" Orientation="Horizontal">
 			    <cc2:WebActionContainer ID="ContextObjectsCreationActionContainer" runat="server" ContainerId="ObjectsCreation"/>
 			    <cc2:WebActionContainer ID="RecordEditContainer" runat="server" ContainerId="RecordEdit"/>
