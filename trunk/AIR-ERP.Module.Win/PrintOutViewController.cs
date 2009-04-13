@@ -1,12 +1,7 @@
 using System;
-using System.ComponentModel;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Text;
 
 using DevExpress.ExpressApp;
 using DevExpress.ExpressApp.Actions;
-using DevExpress.Persistent.Base;
 using DevExpress.ExpressApp.Reports;
 using DevExpress.Data.Filtering;
 using DevExpress.XtraReports.UI;
@@ -24,13 +19,13 @@ namespace AIR_ERP.Module.Win
         private void printOut_Execute(object sender, SimpleActionExecuteEventArgs e)
         {
             String currentOid = "";
-            ReportData reportdata = ObjectSpace.FindObject<ReportData>(new BinaryOperator("Name", View.ObjectType.Name + "PrintOut"));
+            ReportData reportdata = ObjectSpace.FindObject<ReportData>(new BinaryOperator("Name", String.Format("{0}PrintOut", View.ObjectType.Name)));
             XtraReport xr = reportdata.LoadXtraReport(ObjectSpace);
-            currentOid = (((DevExpress.ExpressApp.DetailView)View).CurrentObject.ToString().Remove(0,
-                (((DevExpress.ExpressApp.DetailView)View).CurrentObject.ToString().Length) - 38));
+            currentOid = (((DetailView)View).CurrentObject.ToString().Remove(0,
+                (((DetailView)View).CurrentObject.ToString().Length) - 38));
             currentOid = currentOid.Replace("(", "{");
             currentOid = currentOid.Replace(")", "}");
-            xr.FilterString = "[Oid] = " + currentOid;
+            xr.FilterString = String.Format("[Oid] = {0}", currentOid);
             xr.ShowPreviewDialog();
         }
     }

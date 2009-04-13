@@ -4,8 +4,6 @@ using System.Windows.Forms;
 
 using DevExpress.ExpressApp;
 using DevExpress.ExpressApp.Security;
-using DevExpress.ExpressApp.Win;
-using DevExpress.Persistent.Base;
 using DevExpress.Persistent.BaseImpl;
 using AIR_ERP.Module;
 
@@ -22,21 +20,20 @@ namespace AIR_ERP.Win
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             EditModelPermission.AlwaysGranted = System.Diagnostics.Debugger.IsAttached;
-            AIR_ERPWindowsFormsApplication winApplication = new AIR_ERPWindowsFormsApplication();
-            winApplication.Security = new SecurityComplex<User, Role>(new MyAuthentication());
-            winApplication.CreateCustomLogonWindowObjectSpace += new EventHandler<CreateCustomLogonWindowObjectSpaceEventArgs>(application_CreateCustomLogonWindowObjectSpace);
-            if (ConfigurationManager.ConnectionStrings["ConnectionString"] != null)
+            using (AIR_ERPWindowsFormsApplication winApplication = new AIR_ERPWindowsFormsApplication { Security = new SecurityComplex<User, Role>(new MyAuthentication()) })
             {
-                winApplication.ConnectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
-            }
-            try
-            {
-                winApplication.Setup();
-                winApplication.Start();
-            }
-            catch (Exception e)
-            {
-                winApplication.HandleException(e);
+                winApplication.CreateCustomLogonWindowObjectSpace += application_CreateCustomLogonWindowObjectSpace;
+                if (ConfigurationManager.ConnectionStrings["ConnectionString"] != null)
+                    winApplication.ConnectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
+                try
+                {
+                    winApplication.Setup();
+                    winApplication.Start();
+                }
+                catch (Exception e)
+                {
+                    winApplication.HandleException(e);
+                }
             }
         }
         static void application_CreateCustomLogonWindowObjectSpace(object sender, CreateCustomLogonWindowObjectSpaceEventArgs e)

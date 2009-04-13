@@ -1,14 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Application>
-	<ActionDesign>
-		<ActionToContainerMapping>
-			<ActionContainer ID="Print">
-				<ActionLink ActionID="ShowPrintOut" Index="0" />
-			</ActionContainer>
-		</ActionToContainerMapping>
-	</ActionDesign>
 	<SchemaModules>
-		<SchemaModule Name="DevExpress.ExpressApp.SystemModule.ShowNavigationItemController" Version="8.3.2.5087" />
-		<SchemaModule Name="SystemWindowsFormsModule" Version="8.3.2.5087" IsNewNode="True" />
+		<SchemaModule Name="DevExpress.ExpressApp.SystemModule.ShowNavigationItemController" Version="9.1.2.5458" />
+		<SchemaModule Name="DevExpress.ExpressApp.Win.SystemModule.ChooseSkinController" Version="9.1.2.5458" IsNewNode="True" />
+		<SchemaModule Name="SystemWindowsFormsModule" Version="9.1.2.5458" IsNewNode="True" />
 	</SchemaModules>
+	<Views>
+		<ListView ID="SOHeader_ListView">
+			<Columns>
+				<ColumnInfo PropertyName="DocDate" DisplayFormat="{0:dd MMMM yyyy}" />
+				<ColumnInfo PropertyName="DocNum" DisplayFormat="{0:000000}" />
+			</Columns>
+		</ListView>
+	</Views>
 </Application>

@@ -4,8 +4,6 @@ using DevExpress.Xpo;
 
 using DevExpress.ExpressApp;
 using DevExpress.Persistent.Base;
-using DevExpress.Persistent.BaseImpl;
-using DevExpress.Persistent.Validation;
 using System.ComponentModel;
 using System.Collections.ObjectModel;
 using DevExpress.Data.Filtering;
@@ -15,7 +13,6 @@ namespace AIR_ERP.Module
     [NonPersistent]
     public class MyLogonParameters : INotifyPropertyChanged
     {
-        private ObjectSpace objectSpace;
         private ReadOnlyCollection<Company> availableCompanies;
         private XPCollection<Branch> availableBranch;
         private XPCollection<Employee> availableUsers;
@@ -23,7 +20,6 @@ namespace AIR_ERP.Module
         private Company company;
         private Branch branch;
         private Employee employee;
-        private string password;
 
         private void RefreshAvailableUsers()
         {
@@ -48,17 +44,13 @@ namespace AIR_ERP.Module
         }
 
         [Browsable(false)]
-        public ObjectSpace ObjectSpace
-        {
-            get { return objectSpace; }
-            set { objectSpace = value; }
-        }
+        public ObjectSpace ObjectSpace { get; set; }
         [Browsable(false)]
         public ReadOnlyCollection<Company> AvailableCompanies
         {
             get
             {
-                if (objectSpace == null)
+                if (ObjectSpace == null)
                 {
                     throw new InvalidOperationException("objectSpace is null");
                 }
@@ -141,11 +133,7 @@ namespace AIR_ERP.Module
         }
 
         [PasswordPropertyText(true)]
-        public string Password
-        {
-            get { return password; }
-            set { password = value; }
-        }
+        public string Password { get; set; }
 
         public event PropertyChangedEventHandler PropertyChanged;
     }

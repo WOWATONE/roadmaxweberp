@@ -1,13 +1,9 @@
 using System;
 
 using DevExpress.Xpo;
-using DevExpress.Xpo.DB;
 using DevExpress.Data.Filtering;
 
-using DevExpress.ExpressApp;
 using DevExpress.Persistent.Base;
-using DevExpress.Persistent.BaseImpl;
-using DevExpress.Persistent.Validation;
 using DevExpress.ExpressApp.Reports;
 
 namespace AIR_ERP.Module.Win

@@ -1,10 +1,8 @@
 using System;
 using System.Configuration;
-using System.Web.Configuration;
 using System.Web;
 
 using DevExpress.ExpressApp;
-using DevExpress.Persistent.Base;
 using DevExpress.Persistent.BaseImpl;
 using DevExpress.ExpressApp.Security;
 using DevExpress.ExpressApp.Web;
@@ -12,7 +10,7 @@ using AIR_ERP.Module;
 
 namespace AIR_ERP.Web
 {
-    public class Global : System.Web.HttpApplication
+    public class Global : HttpApplication
     {
         private void Instance_CreateCustomLogonWindowObjectSpace(object sender, CreateCustomLogonWindowObjectSpaceEventArgs e)
         {
@@ -35,7 +33,7 @@ namespace AIR_ERP.Web
                 WebApplication.Instance.ConnectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
             }
             WebApplication.Instance.Security = new SecurityComplex<User, Role>(new MyAuthentication());
-            WebApplication.Instance.CreateCustomLogonWindowObjectSpace += new EventHandler<CreateCustomLogonWindowObjectSpaceEventArgs>(Instance_CreateCustomLogonWindowObjectSpace);
+            WebApplication.Instance.CreateCustomLogonWindowObjectSpace += Instance_CreateCustomLogonWindowObjectSpace;
             WebApplication.Instance.Setup();
             WebApplication.Instance.Start();
         }
